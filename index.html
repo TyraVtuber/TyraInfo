@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TyraPanel · Info de stream</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#090614; --bg2:#0f0a20; --panel:#150e2b; --panel2:#1e1440; --line:#33226e;
+  --purple:#8b5cf6; --purple-deep:#4c1d95; --pink:#ff1fd6; --pink-soft:#ff8cec; --cyan:#22e6ea;
+  --text:#ece6f7; --muted:#9a8bb8; --tw:#a970ff; --kick:#53fc18;
+  --ok:#5dffb1; --warn:#ffc857; --err:#ff4d6d;
+  --glow:0 0 6px rgba(255,31,214,.65),0 0 20px rgba(255,31,214,.3);
+  --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --display:'Orbitron','Segoe UI',system-ui,sans-serif;
+  --fs:clamp(13px,1.6vw,15.5px);
+  --cut:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;scrollbar-width:none;background:var(--bg)}
+html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}
+body{
+  font-family:var(--font);color:var(--text);font-size:var(--fs);
+  background:
+    radial-gradient(900px 500px at 85% -10%,rgba(139,92,246,.22),transparent 60%),
+    radial-gradient(700px 500px at -10% 110%,rgba(255,31,214,.13),transparent 60%),
+    radial-gradient(600px 400px at 110% 105%,rgba(34,230,234,.08),transparent 60%),
+    var(--bg);
+  min-height:100dvh;
+}
+.app{position:relative;min-height:100dvh;display:flex;flex-direction:column;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+
+/* ---------- Header ---------- */
+header{display:flex;align-items:center;gap:10px;padding:10px 12px;flex-wrap:wrap;
+  background:linear-gradient(180deg,rgba(28,15,50,.95),rgba(16,8,28,.85));
+  border-bottom:1px solid var(--line);position:relative;z-index:3;
+  max-height:200px;overflow:hidden;
+  transition:max-height .3s ease,opacity .22s ease,padding .3s ease,border-color .3s ease}
+
+/* ---------- Header: ocultar/mostrar ---------- */
+.app.hdr-collapsed header{max-height:0;padding-top:0;padding-bottom:0;opacity:0;border-bottom-color:transparent;pointer-events:none}
+#hdrToggle{margin-left:2px;font-size:1em;line-height:1;width:29px;justify-content:center;padding:0 !important}
+#hdrToggle svg{width:13px;height:13px;transition:.2s}
+.app.hdr-collapsed #hdrToggle svg{transform:rotate(180deg)}
+#hdrPeek{position:fixed;top:0;left:50%;transform:translate(-50%,-100%);z-index:20;
+  display:flex;align-items:center;gap:6px;cursor:pointer;
+  background:var(--panel2);border:1px solid var(--line);border-top:0;color:var(--muted);
+  padding:5px 16px 6px;font:600 .74em var(--font);letter-spacing:.04em;
+  box-shadow:0 6px 16px rgba(0,0,0,.4);
+  transition:transform .28s ease,color .18s,border-color .18s;
+  border-radius:0 0 12px 12px !important}
+.app.hdr-collapsed #hdrPeek{transform:translate(-50%,0)}
+#hdrPeek:hover{color:var(--text);border-color:var(--cyan)}
+#hdrPeek svg{width:11px;height:11px}
+header::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--cyan),var(--pink),var(--purple),transparent);opacity:.85}
+.brand{display:flex;align-items:center;gap:9px;margin-right:auto}
+.crest{height:36px;width:auto;flex:none;filter:drop-shadow(0 0 7px rgba(34,230,234,.4))}
+.brand h1{font-family:var(--display);font-weight:800;font-size:clamp(14px,2.2vw,18px);letter-spacing:.14em;color:#8ff5ff;text-shadow:0 0 12px rgba(34,230,234,.4)}
+.brand h1 b{color:var(--pink);text-shadow:var(--glow)}
+.brand small{display:block;color:var(--muted);font-size:.68em;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+.pills{display:flex;gap:6px}
+.pill,.iconbtn{
+  display:inline-flex;align-items:center;gap:7px;cursor:pointer;color:var(--text);
+  background:var(--panel2);border:1px solid var(--line);border-radius:999px;
+  padding:6px 12px;font:600 .82em var(--font);transition:.18s;
+}
+.pill{padding:9px;justify-content:center}
+.iconbtn{border-radius:10px}
+.pill:hover,.iconbtn:hover{border-color:var(--cyan);box-shadow:0 0 12px rgba(34,230,234,.3)}
+.dot{width:8px;height:8px;background:#6b5c86;box-shadow:0 0 0 2px rgba(255,255,255,.04);border-radius:50% !important}
+
+/* Botones de la cabecera: bordes redondeados (sin recorte en esquinas) */
+header{gap:7px}
+header .pills{gap:7px}
+header .pill,header .iconbtn{
+  background:var(--panel2);border:1px solid var(--line);
+}
+header .pill{width:28px;height:24px;padding:0;border-radius:999px}
+header .iconbtn{min-height:29px;padding:0 10px;gap:5px;border-radius:10px;font-weight:600}
+[data-s=ok] .dot{background:var(--ok);box-shadow:0 0 8px var(--ok)}
+[data-s=connecting] .dot{background:var(--warn);animation:pulse 1s infinite}
+[data-s=error] .dot{background:var(--err);box-shadow:0 0 8px var(--err)}
+[data-s=idle] .dot{background:#6b5c86}
+@keyframes pulse{50%{opacity:.35}}
+
+/* ---------- Layout ---------- */
+main{flex:1;padding:16px;display:flex;flex-direction:column;gap:18px;max-width:1280px;margin:0 auto;width:100%}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topbar h2{font:800 .95em var(--display);letter-spacing:.1em;color:var(--text)}
+.topbar h2 b{color:var(--cyan)}
+.applyAll{cursor:pointer;border:1px solid var(--pink);color:#fff;background:linear-gradient(135deg,rgba(255,31,214,.4),rgba(139,92,246,.35));
+  padding:9px 18px;font:700 .78em var(--display);letter-spacing:.1em;box-shadow:var(--glow);
+  border-radius:10px;}
+.applyAll:hover{filter:brightness(1.12)}
+.applyAll:disabled{opacity:.45;cursor:wait}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:880px){.grid{grid-template-columns:1fr}}
+
+.card{background:linear-gradient(180deg,rgba(21,14,43,.9),rgba(15,10,32,.9));border:1px solid var(--line);
+  border-radius:16px;
+  padding:16px 18px 18px;display:flex;flex-direction:column;gap:14px;position:relative}
+.card.tw{border-color:rgba(169,112,255,.4)}
+.card.kk{border-color:rgba(83,252,24,.35)}
+.card.shared{border-color:rgba(255,31,214,.4);position:relative;overflow:hidden}
+.card.shared::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;
+  background:linear-gradient(90deg,var(--pink),var(--cyan),var(--purple));opacity:.9}
+.card.shared .plat b{color:var(--pink-soft);text-shadow:0 0 10px rgba(255,31,214,.35)}
+.card-h{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.card-h .who{display:flex;align-items:center;gap:9px}
+.avatar{width:34px;height:34px;object-fit:cover;border:1px solid var(--line);background:var(--bg2);flex:none}
+.plat{display:flex;flex-direction:column;line-height:1.25}
+.plat b{font:800 .82em var(--display);letter-spacing:.08em}
+.card.tw .plat b{color:var(--tw)}
+.card.kk .plat b{color:var(--kick)}
+.plat span{font-size:.72em;color:var(--muted)}
+.livebadge{font:700 .68em var(--display);letter-spacing:.08em;padding:3px 8px;border:1px solid var(--err);color:#ff9db0;
+  background:rgba(255,77,109,.1);display:none;align-items:center;gap:5px}
+.livebadge.on{display:inline-flex}
+.livebadge i{width:6px;height:6px;background:var(--err);box-shadow:0 0 6px var(--err)}
+.synced{font-size:.68em;color:var(--muted)}
+
+.field{display:grid;gap:6px}
+.field label{font-size:.74em;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;display:flex;justify-content:space-between}
+.field label .cnt{color:#6d5e8a;text-transform:none;letter-spacing:0;font-size:1em}
+textarea,input[type=text]{background:var(--bg2);color:var(--text);border:1px solid var(--line);border-radius:8px;
+  padding:10px 12px;font:inherit;outline:none;width:100%;resize:none;font-size:1em}
+textarea:focus,input[type=text]:focus{border-color:var(--cyan);box-shadow:0 0 0 1px var(--cyan),0 0 14px rgba(34,230,234,.25)}
+textarea::placeholder,input::placeholder{color:#6d5e8a}
+
+.catwrap{position:relative}
+.catsel{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--bg2);border-radius:8px;padding:6px 8px;margin-top:6px;font-size:.86em;color:var(--muted)}
+.catsel.has{color:var(--text)}
+.catsel img{width:26px;height:34px;object-fit:cover;border:1px solid var(--line);border-radius:4px;flex:none;background:var(--panel2)}
+.catsel .catname{flex:1}
+.catsel .clr{cursor:pointer;color:var(--muted);padding:2px 6px}
+.catsel .clr:hover{color:var(--err)}
+.catdrop{position:absolute;left:0;right:0;top:calc(100% + 2px);background:var(--panel);border:1px solid var(--cyan);border-radius:10px;
+  box-shadow:0 0 18px rgba(34,230,234,.18);z-index:5;max-height:260px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--purple-deep) transparent}
+.catdrop[hidden]{display:none}
+.catitem{display:flex;align-items:center;gap:9px;padding:7px 9px;cursor:pointer;font-size:.86em}
+.catitem:hover{background:rgba(255,31,214,.14)}
+.catitem img{width:28px;height:37px;object-fit:cover;border:1px solid var(--line);border-radius:4px;flex:none;background:var(--panel2)}
+.catempty{padding:9px;font-size:.8em;color:var(--muted)}
+
+.tagbox{display:flex;flex-wrap:wrap;gap:6px;border:1px solid var(--line);background:var(--bg2);border-radius:10px;padding:7px;min-height:42px;align-items:center}
+.tagbox:focus-within{border-color:var(--cyan);box-shadow:0 0 0 1px var(--cyan)}
+.tag-chip{display:inline-flex;align-items:center;gap:6px;background:rgba(139,92,246,.2);border:1px solid var(--purple);
+  color:#e6dbff;font:600 .78em var(--font);padding:4px 8px 4px 10px;
+  border-radius:8px;}
+.card.kk .tag-chip{background:rgba(83,252,24,.14);border-color:rgba(83,252,24,.55);color:#d7ffc4}
+.tag-chip button{cursor:pointer;color:var(--muted);font-size:1em;line-height:1;background:none;border:0;padding:0}
+.tag-chip button:hover{color:var(--err)}
+.tagbox input{flex:1;min-width:90px;background:transparent;border:0;color:var(--text);font:inherit;outline:none;padding:4px}
+.taghint{font-size:.68em;color:#6d5e8a}
+
+.card-f{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:4px}
+.applyBtn{cursor:pointer;border:0;color:#fff;font:700 .78em var(--display);letter-spacing:.1em;padding:9px 18px;
+  border-radius:10px;transition:.15s}
+.card.tw .applyBtn{background:linear-gradient(135deg,var(--tw),var(--purple-deep));box-shadow:0 0 14px rgba(169,112,255,.4)}
+.card.kk .applyBtn{background:linear-gradient(135deg,var(--kick),#178a3c);box-shadow:0 0 14px rgba(83,252,24,.3);color:#06210c}
+.applyBtn.shared{background:linear-gradient(135deg,var(--pink),var(--cyan));box-shadow:0 0 14px rgba(255,31,214,.35);color:#0c0418}
+.applyBtn:hover{filter:brightness(1.12)}
+.applyBtn:disabled{opacity:.5;cursor:wait}
+.resetBtn{cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--muted);font:600 .76em var(--font);padding:8px 12px;
+  border-radius:10px;}
+.resetBtn:hover{border-color:var(--muted);color:var(--text)}
+.note{font-size:.76em;line-height:1.4;flex:1 1 100%}
+.note.ok{color:var(--ok)}
+.note.err{color:#ff9db0}
+.note.info{color:var(--muted)}
+.dirty-dot{width:6px;height:6px;background:var(--warn);box-shadow:0 0 6px var(--warn);display:none}
+.dirty .dirty-dot{display:inline-block}
+
+/* ---------- Preview ---------- */
+.prevhead{display:flex;align-items:baseline;gap:10px}
+.prevhead h2{font:800 .9em var(--display);letter-spacing:.1em}
+.prevhead h2 b{color:var(--pink)}
+.prevhead span{font-size:.74em;color:var(--muted)}
+.prevgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:880px){.prevgrid{grid-template-columns:1fr}}
+.notif{background:linear-gradient(180deg,rgba(21,14,43,.95),rgba(12,8,24,.95));border:1px solid var(--line);
+  border-radius:16px;
+  padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.notif .nav{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);flex:none;background:var(--bg2)}
+.notif .nbody{flex:1;min-width:0}
+.notif .ntop{display:flex;align-items:center;gap:8px;margin-bottom:4px;flex-wrap:wrap}
+.notif .plattag{font:800 .64em var(--display);letter-spacing:.07em;padding:2px 6px;border:1px solid}
+.notif.tw .plattag{color:var(--tw);border-color:rgba(169,112,255,.6)}
+.notif.kk .plattag{color:var(--kick);border-color:rgba(83,252,24,.5)}
+.notif .live{font:700 .62em var(--display);letter-spacing:.06em;color:#ff9db0;display:inline-flex;align-items:center;gap:4px}
+.notif .live i{width:5px;height:5px;background:var(--err);box-shadow:0 0 5px var(--err)}
+.notif .chname{font-weight:700;color:var(--text)}
+.notif .ntitle{font-size:.95em;line-height:1.35;color:var(--text);word-break:break-word;margin-bottom:3px;min-height:1.3em}
+.notif .ncat{font-size:.78em;color:var(--muted)}
+.notif .ntags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.notif .ntags span{font-size:.66em;color:var(--muted);border:1px solid var(--line);padding:1px 5px}
+
+/* ---------- Ajustes dialog ---------- */
+dialog{margin:auto;width:min(560px,94vw);max-height:92dvh;overflow:auto;scrollbar-width:none;background:var(--panel);color:var(--text);
+  border:1px solid var(--purple);border-radius:16px;padding:0;box-shadow:0 0 24px rgba(139,92,246,.3)}
+dialog::backdrop{background:rgba(6,3,12,.85)}
+dialog::-webkit-scrollbar{display:none}
+.dlg-h{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
+.dlg-h h2{font:800 .95em var(--display);letter-spacing:.12em}
+.dlg-h h2 b{color:var(--pink)}
+.dlg-b{padding:14px 18px 6px;display:grid;gap:18px}
+fieldset{border:1px solid var(--line);border-radius:12px;padding:12px 14px 14px;display:grid;gap:9px}
+legend{padding:0 8px;font:700 .8em var(--display);letter-spacing:.1em}
+legend.tw{color:var(--tw)} legend.kk{color:var(--kick)}
+label{display:grid;gap:4px;font-size:.78em;color:var(--muted)}
+input[type=password]{background:var(--bg2);border:1px solid var(--line);color:var(--text);border-radius:8px;
+  padding:9px 11px;font:inherit;font-size:1.05em;outline:none;width:100%}
+input[type=password]:focus{border-color:var(--purple);box-shadow:0 0 0 1px var(--purple)}
+.btns{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn{cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:9px;padding:8px 14px;font:600 .82em var(--font);transition:.15s}
+.btn:hover{border-color:var(--purple)}
+.btn.pri{border-color:var(--pink);color:#fff;background:linear-gradient(135deg,rgba(255,31,214,.35),rgba(139,92,246,.3));box-shadow:var(--glow)}
+.btn.danger:hover{border-color:var(--err);color:#ff9db0}
+.hint{font-size:.74em;color:var(--muted);line-height:1.5}
+.hint code{background:var(--bg2);padding:1px 5px;border-radius:4px;color:var(--pink-soft)}
+.acct{font-size:.8em;color:var(--ok)}
+.dlg-f{display:flex;justify-content:flex-end;gap:8px;padding:12px 18px 16px}
+details summary{cursor:pointer;color:var(--muted);font-size:.78em}
+.rhead{display:flex;justify-content:space-between;align-items:baseline}
+.rhead b{color:var(--pink-soft);font-weight:600}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:6px;background:var(--line);outline:none;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--pink);border:0;box-shadow:0 0 8px rgba(255,31,214,.7)}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--pink);border:0}
+.switch{display:flex;align-items:center;gap:10px;font-size:.9em;color:var(--text);cursor:pointer;position:relative}
+.switch input{position:absolute;opacity:0;pointer-events:none}
+.switch i{width:38px;height:22px;border-radius:999px;background:var(--line);position:relative;transition:.15s;flex:none}
+.switch i::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--muted);transition:.15s}
+.switch input:checked+i{background:rgba(255,31,214,.35)}
+.switch input:checked+i::after{left:19px;background:var(--pink);box-shadow:0 0 8px rgba(255,31,214,.7)}
+.dlgnote{display:none;font-size:.76em;line-height:1.45;padding:7px 10px;border-radius:8px}
+.dlgnote.show{display:block}
+.dlgnote.err{color:#ff9db0;background:rgba(255,77,109,.09);border:1px solid rgba(255,77,109,.35)}
+.dlgnote.ok{color:var(--ok);background:rgba(93,255,177,.07);border:1px solid rgba(93,255,177,.3)}
+.dlgnote.info{color:var(--muted);background:rgba(139,92,246,.08);border:1px solid var(--line)}
+.redir{display:flex;gap:8px;align-items:center}
+.redir code{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:.8em;color:var(--pink-soft)}
+
+/* ---------- Toast ---------- */
+#toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(20px);opacity:0;pointer-events:none;
+  background:var(--panel2);border:1px solid var(--ok);color:var(--ok);padding:10px 18px;font:700 .8em var(--display);letter-spacing:.08em;
+  box-shadow:0 0 18px rgba(93,255,177,.3);transition:.25s;z-index:9;
+  border-radius:12px;}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+#toast.err{border-color:var(--err);color:#ff9db0;box-shadow:0 0 18px rgba(255,77,109,.3)}
+
+@media (max-width:520px){
+  header{padding:8px 10px;gap:7px}.brand small{display:none}
+  main{padding:12px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">
+      <img class="crest" src="data:image/webp;base64,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" alt="Emblema de TyraPanel" width="44" height="36">
+      <div><h1>TYRA<b>PANEL</b></h1><small>Título · Categoría · Etiquetas</small></div>
+    </div>
+    <div class="pills">
+      <button class="pill" id="pillTwitch" data-s="idle" title="Twitch"><i class="dot"></i></button>
+      <button class="pill" id="pillKick" data-s="idle" title="Kick"><i class="dot"></i></button>
+    </div>
+    <button class="iconbtn" id="setBtn" title="Ajustes y cuentas">⚙ Ajustes</button>
+    <button class="iconbtn" id="hdrToggle" title="Ocultar barra superior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+  </header>
+
+  <button id="hdrPeek" title="Mostrar barra superior">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    TyraPanel
+  </button>
+
+  <main>
+    <div class="topbar">
+      <h2>INFO DE <b>STREAM</b></h2>
+      <button class="applyAll" id="applyAllBtn">APLICAR TODO</button>
+    </div>
+
+    <section class="card shared" id="sharedCard">
+      <div class="card-h">
+        <div class="who">
+          <div class="plat"><b>TÍTULO Y ETIQUETAS</b><span>Se aplican igual en Twitch y en Kick</span></div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Título <span class="cnt"><span id="sharedLen">0</span>/140</span></label>
+        <textarea id="sharedTitle" rows="2" maxlength="140" placeholder="Escribe el título de tu stream…"></textarea>
+      </div>
+      <div class="field">
+        <label>Etiquetas <span class="cnt"><span id="sharedTagN">0</span>/10</span></label>
+        <div class="tagbox" id="sharedTagBox">
+          <input type="text" id="sharedTagInput" placeholder="Escribe y pulsa Enter…" autocomplete="off">
+        </div>
+        <div class="taghint">Enter o coma para añadir · Backspace para borrar la última</div>
+      </div>
+      <div class="card-f">
+        <button class="applyBtn shared" id="sharedApply">APLICAR TÍTULO Y ETIQUETAS</button>
+        <div class="note" id="sharedNote"></div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card tw" data-plat="twitch">
+        <div class="card-h">
+          <div class="who">
+            <img class="avatar" id="twAvatar" alt="">
+            <div class="plat"><b>TWITCH</b><span id="twWho">Sin cuenta conectada</span></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="livebadge" id="twLive"><i></i>EN VIVO</span>
+            <span class="synced" id="twSynced"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Categoría / Juego</label>
+          <div class="catwrap" id="twCatWrap">
+            <input type="text" id="twCatSearch" placeholder="Buscar categoría…" autocomplete="off">
+            <div class="catdrop" id="twCatDrop" hidden></div>
+          </div>
+          <div class="catsel" id="twCatSel"><span class="catname">Ninguna categoría seleccionada</span></div>
+        </div>
+
+        <div class="card-f">
+          <span class="dirty-dot" id="twDirty"></span>
+          <button class="applyBtn" id="twApply">APLICAR EN TWITCH</button>
+          <button class="resetBtn" id="twReset">Restablecer</button>
+          <div class="note" id="twNote2"></div>
+        </div>
+      </section>
+
+      <section class="card kk" data-plat="kick">
+        <div class="card-h">
+          <div class="who">
+            <img class="avatar" id="kkAvatar" alt="" referrerpolicy="no-referrer">
+            <div class="plat"><b>KICK</b><span id="kkWho">Sin cuenta conectada</span></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="livebadge" id="kkLive"><i></i>EN VIVO</span>
+            <span class="synced" id="kkSynced"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Categoría</label>
+          <div class="catwrap" id="kkCatWrap">
+            <input type="text" id="kkCatSearch" placeholder="Buscar categoría…" autocomplete="off">
+            <div class="catdrop" id="kkCatDrop" hidden></div>
+          </div>
+          <div class="catsel" id="kkCatSel"><span class="catname">Ninguna categoría seleccionada</span></div>
+        </div>
+
+        <div class="card-f">
+          <span class="dirty-dot" id="kkDirty"></span>
+          <button class="applyBtn" id="kkApply">APLICAR EN KICK</button>
+          <button class="resetBtn" id="kkReset">Restablecer</button>
+          <div class="note" id="kkNote2"></div>
+        </div>
+      </section>
+    </div>
+
+
+    <div>
+      <div class="prevhead"><h2>VISTA PREVIA DE <b>NOTIFICACIÓN</b></h2><span>Así se vería el aviso de que estás en vivo</span></div>
+      <div class="prevgrid" style="margin-top:10px">
+        <div class="notif tw">
+          <img class="nav" id="twPrevAvatar" alt="">
+          <div class="nbody">
+            <div class="ntop"><span class="plattag">TWITCH</span><span class="live"><i></i>AHORA EN VIVO</span></div>
+            <div class="chname" id="twPrevName">tyravt</div>
+            <div class="ntitle" id="twPrevTitle">Tu título aparecerá aquí…</div>
+            <div class="ncat" id="twPrevCat">Sin categoría</div>
+            <div class="ntags" id="twPrevTags"></div>
+          </div>
+        </div>
+        <div class="notif kk">
+          <img class="nav" id="kkPrevAvatar" alt="" referrerpolicy="no-referrer">
+          <div class="nbody">
+            <div class="ntop"><span class="plattag">KICK</span><span class="live"><i></i>AHORA EN VIVO</span></div>
+            <div class="chname" id="kkPrevName">tyravt</div>
+            <div class="ntitle" id="kkPrevTitle">Tu título aparecerá aquí…</div>
+            <div class="ncat" id="kkPrevCat">Sin categoría</div>
+            <div class="ntags" id="kkPrevTags"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="toast"></div>
+
+<dialog id="dlg">
+  <div class="dlg-h"><h2>AJUSTES · <b>CUENTAS</b></h2><button class="iconbtn" id="dlgClose">✕</button></div>
+  <div class="dlg-b">
+    <fieldset>
+      <legend>SONIDO</legend>
+      <label class="switch"><input type="checkbox" id="sndOn"><i></i><span>Sonido al aplicar cambios</span></label>
+      <label>
+        <div class="rhead"><span>Volumen</span><b id="volVal">40%</b></div>
+        <input type="range" id="volRange" min="0" max="100" step="5">
+      </label>
+      <div class="btns"><button class="btn" id="sndTest" type="button">▶ Probar sonido</button></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>URL DE REDIRECCIÓN</legend>
+      <div class="redir"><code id="redirUrl"></code><button class="btn" id="copyRedir">Copiar</button></div>
+      <div class="hint">Añádela como Redirect URI extra en tu misma app de Twitch/Kick (la que ya usas en TyraChat) o en una nueva.</div>
+      <div class="dlgnote" id="fileNote"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend class="tw">TWITCH</legend>
+      <label>Canal a gestionar<input type="text" id="twChannel" placeholder="tyravt"></label>
+      <div class="acct" id="twAcct"></div>
+      <div class="dlgnote" id="twNote"></div>
+      <label>Client ID de tu app de Twitch<input type="text" id="twClient" placeholder="Client ID de dev.twitch.tv/console"></label>
+      <div class="btns">
+        <button class="btn pri" id="twConnect">Conectar con Twitch</button>
+        <button class="btn danger" id="twLogout">Desconectar</button>
+      </div>
+      <details>
+        <summary>O pega un token manualmente</summary>
+        <label style="margin-top:8px">Token OAuth (scope channel:manage:broadcast)<input type="password" id="twToken" placeholder="oauth:xxxxxxxx"></label>
+        <div class="btns" style="margin-top:8px"><button class="btn" id="twTokenSave">Validar token</button></div>
+      </details>
+      <div class="hint">Este panel necesita el permiso <code>channel:manage:broadcast</code>, distinto al de TyraChat. Conecta de nuevo aunque ya hayas conectado la cuenta allí.</div>
+    </fieldset>
+
+    <fieldset>
+      <legend class="kk">KICK</legend>
+      <label>Canal a gestionar<input type="text" id="kkChannel" placeholder="tyravt"></label>
+      <div class="acct" id="kkAcct"></div>
+      <div class="dlgnote" id="kkNote"></div>
+      <label>Client ID de tu app de Kick<input type="text" id="kkClient" placeholder="Client ID de kick.com → Ajustes → Desarrollador"></label>
+      <label>Client Secret<input type="password" id="kkSecret" placeholder="Client Secret"></label>
+      <div class="btns">
+        <button class="btn pri" id="kkConnect">Conectar con Kick</button>
+        <button class="btn danger" id="kkLogout">Desconectar</button>
+      </div>
+      <details>
+        <summary>O pega un access token manualmente</summary>
+        <label style="margin-top:8px">Access token (scope channel:write)<input type="password" id="kkToken" placeholder="Bearer token"></label>
+        <div class="btns" style="margin-top:8px"><button class="btn" id="kkTokenSave">Guardar token</button></div>
+      </details>
+      <div class="hint">Necesita el permiso <code>channel:write</code> (y <code>channel:read</code>, <code>user:read</code>) para poder cambiar título, categoría y etiquetas.</div>
+    </fieldset>
+  </div>
+  <div class="dlg-f">
+    <button class="btn" id="dlgCancel">Cancelar</button>
+    <button class="btn pri" id="dlgSave">Guardar</button>
+  </div>
+</dialog>
+
+<script>
+(() => {
+'use strict';
+const $ = s => document.querySelector(s);
+const DEF = {
+  twChannel:'tyravt', twClient:'', twToken:'', twLogin:'', twUserId:'', twScopes:'',
+  kkChannel:'tyravt', kkClient:'', kkSecret:'', kkToken:'', kkRefresh:'', kkExpires:0, kkLogin:'', kkBroadcaster:'',
+  soundOn:true, volume:40
+};
+let cfg = { ...DEF };
+try { Object.assign(cfg, JSON.parse(localStorage.getItem('tyrapanel.cfg') || '{}')); } catch {}
+const save = () => { try { localStorage.setItem('tyrapanel.cfg', JSON.stringify(cfg)); } catch {} };
+const redirectUri = () => location.origin + location.pathname;
+const canRedirect = () => location.protocol === 'https:' || location.hostname === 'localhost';
+// Toma lo que haya escrito en el formulario de Ajustes y lo guarda en cfg,
+// para que "Conectar" / "Validar token" funcionen aunque no se haya pulsado "Guardar" antes.
+function syncFormToCfg(){
+  if($('#twChannel')) cfg.twChannel = $('#twChannel').value.trim() || cfg.twChannel;
+  if($('#twClient')) cfg.twClient = $('#twClient').value.trim();
+  const prevKk = cfg.kkChannel;
+  if($('#kkChannel')) cfg.kkChannel = $('#kkChannel').value.trim() || cfg.kkChannel;
+  if(cfg.kkChannel !== prevKk) cfg.kkBroadcaster = '';
+  if($('#kkClient')) cfg.kkClient = $('#kkClient').value.trim();
+  if($('#kkSecret')) cfg.kkSecret = $('#kkSecret').value.trim();
+  save();
+}
+const rand = () => Array.from(crypto.getRandomValues(new Uint8Array(16)), b => b.toString(16).padStart(2,'0')).join('');
+const b64url = buf => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+
+/* ---------- Sonido (suave y cyber: pad sintético + blips con eco) ---------- */
+let actx = null, noiseBuf = null;
+function ensureAudio(){
+  try{
+    if(!actx){ const AC = window.AudioContext || window.webkitAudioContext; if(!AC) return null; actx = new AC(); }
+    if(actx.state === 'suspended') actx.resume();
+  }catch{ return null; }
+  return actx;
+}
+function getNoiseBuffer(ctx){
+  if(noiseBuf && noiseBuf.sampleRate === ctx.sampleRate) return noiseBuf;
+  const len = Math.floor(ctx.sampleRate * .22);
+  const buf = ctx.createBuffer(1, len, ctx.sampleRate);
+  const d = buf.getChannelData(0);
+  for(let i=0;i<len;i++) d[i] = Math.random()*2-1;
+  noiseBuf = buf; return buf;
+}
+function confirmChime(preview){
+  const isPreview = typeof preview === 'number';
+  if(!isPreview && !cfg.soundOn) return;
+  const vol = (isPreview ? preview : Number(cfg.volume)) / 100;
+  if(!(vol > 0)) return;
+  const ctx = ensureAudio(); if(!ctx || ctx.state !== 'running') return;
+  const t = ctx.currentTime;
+
+  // Sonido suave y "cyber": pad sintético grave con barrido lento + tres blips agudos con eco.
+  const out = ctx.createGain(); out.gain.value = 1; out.connect(ctx.destination);
+  const dly = ctx.createDelay(1); dly.delayTime.value = .21;
+  const fb = ctx.createGain(); fb.gain.value = .32;
+  const dlp = ctx.createBiquadFilter(); dlp.type = 'lowpass'; dlp.frequency.value = 2200;
+  const wet = ctx.createGain(); wet.gain.value = .42;
+  dly.connect(dlp); dlp.connect(fb); fb.connect(dly); dlp.connect(wet); wet.connect(out);
+
+  // 1) Pad: quinta abierta (Re3-La3-Mi4) con dos osciladores desafinados, ataque lento
+  const padF = ctx.createBiquadFilter(); padF.type = 'lowpass'; padF.Q.value = 1.2;
+  padF.frequency.setValueAtTime(380, t);
+  padF.frequency.exponentialRampToValueAtTime(1500, t + .45);
+  padF.frequency.exponentialRampToValueAtTime(520, t + 1.2);
+  const padG = ctx.createGain();
+  const padPeak = Math.max(.0002, vol * .075);
+  padG.gain.setValueAtTime(.0001, t);
+  padG.gain.linearRampToValueAtTime(padPeak, t + .22);
+  padG.gain.exponentialRampToValueAtTime(.0001, t + 1.25);
+  padF.connect(padG); padG.connect(out); padG.connect(dly);
+  [146.83, 220, 329.63].forEach((f, i) => {
+    [-5, 5].forEach(det => {
+      const o = ctx.createOscillator(); o.type = i === 2 ? 'sine' : 'sawtooth';
+      o.frequency.setValueAtTime(f, t); o.detune.value = det;
+      const og = ctx.createGain(); og.gain.value = i === 2 ? .7 : .35;
+      o.connect(og); og.connect(padF);
+      o.start(t); o.stop(t + 1.3);
+    });
+  });
+
+  // 2) Blips: La4 → Mi5 → La5, senoidales con un pequeño deslizamiento, muy suaves
+  [440, 659.25, 880].forEach((f, i) => {
+    const st = t + .05 + i * .11;
+    const o = ctx.createOscillator(); o.type = 'sine';
+    o.frequency.setValueAtTime(f * .97, st);
+    o.frequency.exponentialRampToValueAtTime(f, st + .05);
+    const g = ctx.createGain();
+    const pk = Math.max(.0002, vol * (.085 - i * .01));
+    g.gain.setValueAtTime(.0001, st);
+    g.gain.exponentialRampToValueAtTime(pk, st + .02);
+    g.gain.exponentialRampToValueAtTime(.0001, st + .3);
+    o.connect(g); g.connect(out); g.connect(dly);
+    o.start(st); o.stop(st + .32);
+  });
+
+  // Liberar los nodos del eco cuando termina
+  setTimeout(() => { try{ out.disconnect(); dly.disconnect(); dlp.disconnect(); fb.disconnect(); wet.disconnect(); }catch{} }, 2600);
+}
+
+/* ---------- Toast ---------- */
+let toastTimer = null;
+function toast(msg, kind){
+  const el = $('#toast'); el.textContent = msg; el.className = kind === 'err' ? 'err' : '';
+  requestAnimationFrame(() => el.classList.add('show'));
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('show'), 3200);
+}
+function note(id, msg, kind){ const el = $('#'+id); if(!el) return; el.className = 'dlgnote' + (msg ? ' show' : '') + (kind ? ' '+kind : ''); el.textContent = msg || ''; }
+function note2(id, msg, kind){ const el = $('#'+id); if(!el) return; el.className = 'note' + (kind ? ' '+kind : ''); el.textContent = msg || ''; }
+
+function setPillStatus(plat, state, title){
+  const el = $(plat === 'twitch' ? '#pillTwitch' : '#pillKick');
+  el.dataset.s = state; if(title) el.title = title;
+}
+
+/* ---------- Barra superior: ocultar / mostrar ---------- */
+(() => {
+  const appEl = $('.app'), toggleBtn = $('#hdrToggle'), peekBtn = $('#hdrPeek');
+  const KEY = 'tyrapanel.hdrHidden';
+  function apply(hidden){
+    appEl.classList.toggle('hdr-collapsed', hidden);
+    const label = hidden ? 'Mostrar barra superior' : 'Ocultar barra superior';
+    toggleBtn.title = label; peekBtn.title = label;
+    toggleBtn.setAttribute('aria-expanded', String(!hidden));
+    try{ localStorage.setItem(KEY, hidden ? '1' : '0'); }catch{}
+  }
+  toggleBtn.addEventListener('click', () => apply(!appEl.classList.contains('hdr-collapsed')));
+  peekBtn.addEventListener('click', () => apply(false));
+  let startHidden = false;
+  try{ startHidden = localStorage.getItem(KEY) === '1'; }catch{}
+  apply(startHidden);
+})();
+
+/* ---------- Estado por plataforma ---------- */
+const state = {
+  twitch:{ title:'', catId:'', catName:'', catImg:'', tags:[], live:false, saved:{title:'',catId:'',catName:'',tags:[]} },
+  kick:{ title:'', catId:'', catName:'', catImg:'', tags:[], live:false, saved:{title:'',catId:'',catName:'',tags:[]} }
+};
+
+function isDirty(p){
+  const s = state[p], sv = s.saved;
+  return s.title !== sv.title || s.catId !== sv.catId || JSON.stringify(s.tags) !== JSON.stringify(sv.tags);
+}
+function refreshDirty(p){
+  const dot = $(p === 'twitch' ? '#twDirty' : '#kkDirty');
+  dot.parentElement.classList.toggle('dirty', isDirty(p));
+}
+
+/* ---------- Etiquetas compartidas: se aplican igual a ambas plataformas ---------- */
+let sharedTags = [];
+function makeSharedTagInput(maxTags){
+  const box = $('#sharedTagBox'), input = $('#sharedTagInput'), countEl = $('#sharedTagN');
+  function mirror(){ state.twitch.tags = [...sharedTags]; state.kick.tags = [...sharedTags]; syncPreview(); refreshDirty('twitch'); refreshDirty('kick'); }
+  function render(){
+    box.querySelectorAll('.tag-chip').forEach(n => n.remove());
+    sharedTags.forEach((tg, i) => {
+      const chip = document.createElement('span'); chip.className = 'tag-chip';
+      const txt = document.createElement('span'); txt.textContent = tg;
+      const btn = document.createElement('button'); btn.type='button'; btn.textContent='✕';
+      btn.onclick = () => { sharedTags.splice(i,1); render(); mirror(); };
+      chip.append(txt, btn); box.insertBefore(chip, input);
+    });
+    countEl.textContent = sharedTags.length;
+  }
+  function addTag(raw){
+    const v = raw.trim().replace(/,/g,''); if(!v) return;
+    if(sharedTags.length >= maxTags) return;
+    if(sharedTags.some(t => t.toLowerCase() === v.toLowerCase())) return;
+    sharedTags.push(v.slice(0,25)); render(); mirror();
+  }
+  input.addEventListener('keydown', e => {
+    if(e.key === 'Enter' || e.key === ','){ e.preventDefault(); addTag(input.value); input.value=''; }
+    else if(e.key === 'Backspace' && !input.value && sharedTags.length){ sharedTags.pop(); render(); mirror(); }
+  });
+  input.addEventListener('blur', () => { if(input.value.trim()){ addTag(input.value); input.value=''; } });
+  function setAll(arr){ sharedTags = Array.isArray(arr) ? arr.slice(0,maxTags) : []; render(); mirror(); }
+  return { render, setAll };
+}
+const sharedTagUI = makeSharedTagInput(10);
+// Si al cargar los datos guardados Twitch y Kick tenían etiquetas distintas, se parte de las de
+// Twitch (o las de Kick si Twitch no tenía) — luego cualquier cambio se aplica a ambas.
+function syncSharedTagsFromLoad(){
+  const arr = state.twitch.tags.length ? state.twitch.tags : state.kick.tags;
+  sharedTagUI.setAll(arr);
+}
+
+/* ---------- Vista previa de notificación ---------- */
+function syncPreview(){
+  $('#twPrevName').textContent = cfg.twChannel || 'tyravt';
+  $('#twPrevTitle').textContent = state.twitch.title.trim() || 'Tu título aparecerá aquí…';
+  $('#twPrevCat').textContent = state.twitch.catName || 'Sin categoría';
+  $('#twPrevTags').innerHTML = state.twitch.tags.map(t => `<span>${escapeHtml(t)}</span>`).join('');
+  $('.notif.tw .live').style.display = state.twitch.live ? 'inline-flex' : 'none';
+
+  $('#kkPrevName').textContent = cfg.kkChannel || 'tyravt';
+  $('#kkPrevTitle').textContent = state.kick.title.trim() || 'Tu título aparecerá aquí…';
+  $('#kkPrevCat').textContent = state.kick.catName || 'Sin categoría';
+  $('#kkPrevTags').innerHTML = state.kick.tags.map(t => `<span>${escapeHtml(t)}</span>`).join('');
+  $('.notif.kk .live').style.display = state.kick.live ? 'inline-flex' : 'none';
+}
+function escapeHtml(s){ return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+/* ---------- Selector de categoría (genérico) ---------- */
+function catSelUpdate(prefix, plat){
+  const sel = $('#'+prefix+'CatSel'), s = state[plat];
+  // Si por algún motivo hay un id de categoría sin nombre (dato incompleto/corrupto),
+  // se trata como "sin categoría" en vez de mostrar un selector vacío con la X puesta,
+  // que es justo lo que causaba el recuadro en blanco.
+  if(s.catId && !s.catName){ s.catId = ''; s.catImg = ''; }
+  if(s.catId){
+    sel.className = 'catsel has';
+    sel.innerHTML = (s.catImg ? `<img src="${escapeHtml(s.catImg)}" alt=""${plat==='kick' ? ' referrerpolicy="no-referrer"' : ''}>` : '') +
+      `<span class="catname">${escapeHtml(s.catName)}</span><span class="clr" title="Quitar">✕</span>`;
+    sel.querySelector('.clr').onclick = () => { s.catId=''; s.catName=''; s.catImg=''; catSelUpdate(prefix,plat); syncPreview(); refreshDirty(plat); };
+  } else {
+    sel.className = 'catsel';
+    sel.innerHTML = `<span class="catname">Ninguna categoría seleccionada</span>`;
+  }
+}
+function wireCatSearch(prefix, plat, searchFn){
+  const input = $('#'+prefix+'CatSearch'), drop = $('#'+prefix+'CatDrop');
+  let timer = null, reqId = 0;
+  function hide(){ drop.hidden = true; drop.innerHTML=''; }
+  function msg(text){ drop.innerHTML = `<div class="catempty">${escapeHtml(text)}</div>`; drop.hidden = false; }
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    const q = input.value.trim();
+    if(!q){ reqId++; hide(); return; }
+    msg('Buscando…');
+    timer = setTimeout(async () => {
+      const my = ++reqId;
+      let results = [];
+      try{ results = await searchFn(q); }
+      catch(e){ if(my === reqId) msg(e && e.message ? e.message : 'No se pudo buscar.'); return; }
+      if(my !== reqId) return;
+      if(!results.length){ msg('Sin resultados'); return; }
+      drop.innerHTML = '';
+      results.slice(0,20).forEach(r => {
+        const it = document.createElement('div'); it.className = 'catitem';
+        it.innerHTML = (r.img ? `<img src="${escapeHtml(r.img)}" alt=""${plat==='kick' ? ' referrerpolicy="no-referrer"' : ''}>` : '') + `<span>${escapeHtml(r.name)}</span>`;
+        it.onclick = () => {
+          state[plat].catId = r.id; state[plat].catName = r.name; state[plat].catImg = r.img || '';
+          catSelUpdate(prefix, plat); syncPreview(); refreshDirty(plat); hide(); input.value = '';
+        };
+        drop.appendChild(it);
+      });
+      drop.hidden = false;
+    }, 280);
+  });
+  drop.addEventListener('mousedown', e => e.preventDefault()); // evita que el input pierda el foco al tocar un resultado
+  input.addEventListener('blur', () => setTimeout(() => { reqId++; hide(); }, 180));
+}
+
+/* ---------- Título compartido: se aplica igual a ambas plataformas ---------- */
+const sharedTitleEl = $('#sharedTitle'), sharedLenEl = $('#sharedLen');
+function setSharedTitle(v, focusSkip){
+  state.twitch.title = v; state.kick.title = v;
+  if(!focusSkip) sharedTitleEl.value = v;
+  sharedLenEl.textContent = v.length;
+  syncPreview(); refreshDirty('twitch'); refreshDirty('kick');
+}
+sharedTitleEl.addEventListener('input', () => setSharedTitle(sharedTitleEl.value, true));
+// Si al cargar los datos guardados el título de Twitch y Kick difiere, se muestra el de Twitch
+// (o el de Kick si Twitch no tiene) como punto de partida — luego cualquier cambio se aplica a ambos.
+function syncSharedTitleFromLoad(){
+  const v = state.twitch.title || state.kick.title || '';
+  setSharedTitle(v);
+}
+
+/* =========================================================
+   TWITCH
+   ========================================================= */
+async function twValidate(token){
+  const r = await fetch('https://id.twitch.tv/oauth2/validate', { headers:{ Authorization:'OAuth '+token }});
+  if(!r.ok) throw new Error('Token no válido');
+  return r.json();
+}
+function twStoreAuth(token, v){
+  cfg.twToken = token; cfg.twLogin = v.login; cfg.twUserId = v.user_id || ''; cfg.twScopes = (v.scopes||[]).join(' '); save();
+}
+function twHeaders(){ return { 'Client-Id': cfg.twClient, Authorization:'Bearer '+cfg.twToken }; }
+function twStartLogin(){
+  syncFormToCfg();
+  if(!cfg.twClient){ note('twNote','Falta el Client ID. Créalo en dev.twitch.tv/console (o usa el mismo de TyraChat) y pulsa Administrar → copia el "ID de cliente".'); return; }
+  if(!canRedirect()){ note('twNote','Abre esta página desde https:// o desde http://localhost. Mientras tanto usa el token manual.'); return; }
+  note('twNote','Redirigiendo a Twitch…','info');
+  const st = rand(); sessionStorage.setItem('tp.tw.state', st);
+  location.href = 'https://id.twitch.tv/oauth2/authorize?' + new URLSearchParams({
+    client_id: cfg.twClient, redirect_uri: redirectUri(), response_type:'token',
+    scope:'channel:manage:broadcast', state: st, force_verify:'true' });
+}
+async function twLoadAvatar(){
+  if(!cfg.twUserId || !cfg.twToken) return;
+  try{
+    const j = await (await fetch('https://api.twitch.tv/helix/users?id='+cfg.twUserId, { headers: twHeaders() })).json();
+    const u = j && j.data && j.data[0]; if(u && u.profile_image_url){
+      $('#twAvatar').src = u.profile_image_url; $('#twPrevAvatar').src = u.profile_image_url;
+    }
+  }catch{}
+}
+async function twFetchCurrent(){
+  if(!cfg.twToken || !cfg.twUserId){ setPillStatus('twitch','idle'); return; }
+  setPillStatus('twitch','connecting','Cargando datos de Twitch…');
+  try{
+    const j = await (await fetch('https://api.twitch.tv/helix/channels?broadcaster_id='+cfg.twUserId, { headers: twHeaders() })).json();
+    const c = j && j.data && j.data[0];
+    if(c){
+      state.twitch.title = c.title || ''; state.twitch.catId = c.game_id || ''; state.twitch.catName = c.game_name || '';
+      state.twitch.tags = Array.isArray(c.tags) ? c.tags.slice(0,10) : [];
+      if(state.twitch.catId){ try{ const g = await twGetGameImg(state.twitch.catId); state.twitch.catImg = g; }catch{} }
+      state.twitch.saved = { title: state.twitch.title, catId: state.twitch.catId, catName: state.twitch.catName, tags: [...state.twitch.tags] };
+      catSelUpdate('tw','twitch');
+    }
+    try{
+      const streams = await (await fetch('https://api.twitch.tv/helix/streams?user_id='+cfg.twUserId, { headers: twHeaders() })).json();
+      state.twitch.live = !!(streams && streams.data && streams.data.length);
+      $('#twLive').classList.toggle('on', state.twitch.live);
+    }catch{}
+    syncPreview(); refreshDirty('twitch');
+    setPillStatus('twitch','ok','Twitch conectado');
+    $('#twSynced').textContent = 'Sincronizado ' + new Date().toLocaleTimeString();
+  }catch(e){
+    setPillStatus('twitch','error','Error al cargar datos de Twitch');
+  }
+}
+async function twGetGameImg(id){
+  const j = await (await fetch('https://api.twitch.tv/helix/games?id='+id, { headers: twHeaders() })).json();
+  const g = j && j.data && j.data[0]; if(!g) return '';
+  return (g.box_art_url||'').replace('{width}','52').replace('{height}','72');
+}
+async function twSearchCategories(q){
+  const j = await (await fetch('https://api.twitch.tv/helix/search/categories?query='+encodeURIComponent(q)+'&first=20', { headers: twHeaders() })).json();
+  if(j.error) throw new Error('Twitch: '+(j.message||j.error));
+  return (j.data||[]).map(g => ({ id:g.id, name:g.name, img:(g.box_art_url||'').replace('{width}','52').replace('{height}','72') }));
+}
+async function twApplyChanges(){
+  if(!cfg.twToken || !cfg.twUserId){ note2('twNote2','Conecta tu cuenta de Twitch en ⚙ Ajustes primero.','err'); return; }
+  const s = state.twitch, btn = $('#twApply');
+  const body = {};
+  if(s.title.trim()) body.title = s.title.trim();
+  if(s.catId) body.game_id = s.catId;
+  body.tags = s.tags;
+  if(!body.title && !s.catId && !s.tags.length){ note2('twNote2','No hay nada que aplicar todavía.','err'); return; }
+  btn.disabled = true; note2('twNote2','Aplicando cambios…','info');
+  try{
+    const r = await fetch('https://api.twitch.tv/helix/channels?broadcaster_id='+cfg.twUserId, {
+      method:'PATCH', headers:{ ...twHeaders(), 'Content-Type':'application/json' }, body: JSON.stringify(body)
+    });
+    if(r.status === 401){ cfg.twToken=''; save(); throw new Error('El token caducó, vuelve a conectar la cuenta en Ajustes.'); }
+    if(!r.ok){ const j = await r.json().catch(()=>({})); throw new Error(j.message || ('Error '+r.status)); }
+    s.saved = { title: s.title, catId: s.catId, catName: s.catName, tags: [...s.tags] };
+    refreshDirty('twitch');
+    note2('twNote2','Cambios aplicados en Twitch ✓','ok');
+    toast('✓ TWITCH ACTUALIZADO');
+    confirmChime();
+    $('#twSynced').textContent = 'Aplicado ' + new Date().toLocaleTimeString();
+  }catch(e){
+    note2('twNote2', 'Twitch: '+e.message, 'err');
+    toast('✕ ERROR EN TWITCH','err');
+  }finally{ btn.disabled = false; }
+}
+$('#twApply').onclick = twApplyChanges;
+$('#twReset').onclick = () => {
+  const s = state.twitch;
+  s.catId = s.saved.catId; s.catName = s.saved.catName;
+  setSharedTitle(s.saved.title); sharedTagUI.setAll(s.saved.tags);
+  catSelUpdate('tw','twitch'); syncPreview(); refreshDirty('twitch');
+};
+wireCatSearch('tw','twitch', twSearchCategories);
+
+/* =========================================================
+   KICK
+   ========================================================= */
+function kkHeaders(){ return { Authorization:'Bearer '+cfg.kkToken }; }
+
+/* ---------- Renovación automática del token de Kick ----------
+   El access token de Kick dura poco (~2 h). Con el refresh token se pide uno nuevo solo,
+   sin que tengas que volver a conectar la cuenta. */
+const KK_DEFAULT_TTL = 2*60*60*1000; // 2h: se usa como respaldo si Kick no manda "expires_in" (p. ej. en algunas renovaciones)
+function kkStoreTokens(j){
+  cfg.kkToken = j.access_token;
+  if(j.refresh_token) cfg.kkRefresh = j.refresh_token;
+  cfg.kkExpires = j.expires_in ? Date.now() + Number(j.expires_in)*1000 : Date.now() + KK_DEFAULT_TTL;
+  save();
+}
+// Cierra la sesión de Kick de forma visible: limpia los tokens, actualiza el punto de estado
+// y avisa en Ajustes que hay que reconectar. Antes esto se hacía "a medias" (solo se borraba
+// el refresh token) y el panel se quedaba mostrando la cuenta como conectada pero sin poder
+// cargar ni aplicar nada, lo que parecía una desconexión "sin motivo".
+function kkClearSession(reason){
+  cfg.kkToken=''; cfg.kkRefresh=''; cfg.kkExpires=0; cfg.kkLogin=''; save();
+  setPillStatus('kick','idle','Kick: sin conectar');
+  note('kkNote', reason || 'Tu sesión de Kick caducó. Vuelve a conectar la cuenta en ⚙ Ajustes.', 'err');
+  note2('kkNote2', reason || 'Tu sesión de Kick caducó. Reconecta la cuenta en ⚙ Ajustes.', 'err');
+  if(typeof fillForm === 'function'){ try{ fillForm(); }catch{} }
+}
+let kkRefreshing = null;
+function kkRefreshToken(){
+  if(kkRefreshing) return kkRefreshing;           // una sola renovación a la vez (el refresh token es de un solo uso)
+  if(!cfg.kkRefresh || !cfg.kkClient || !cfg.kkSecret) return Promise.resolve(false);
+  kkRefreshing = (async () => {
+    try{
+      const r = await fetch('https://id.kick.com/oauth/token', { method:'POST',
+        headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body: new URLSearchParams({ grant_type:'refresh_token', refresh_token:cfg.kkRefresh,
+          client_id:cfg.kkClient, client_secret:cfg.kkSecret }) });
+      const j = await r.json().catch(() => ({}));
+      if(r.ok && j.access_token){ kkStoreTokens(j); return true; }
+      // El refresh token es de un solo uso y caduca: si Kick lo rechaza (400/401) ya no hay forma
+      // automática de recuperar la sesión, así que se limpia todo y se avisa para reconectar.
+      if(r.status === 400 || r.status === 401){
+        kkClearSession('Kick: la sesión caducó y no se pudo renovar sola. Vuelve a conectar la cuenta en ⚙ Ajustes.');
+      }
+      return false;
+    }catch(e){ return false; }                     // fallo de red: se conserva todo y se reintenta luego
+    finally{ kkRefreshing = null; }
+  })();
+  return kkRefreshing;
+}
+async function kkEnsureFresh(){
+  // Se renueva con 5 min de margen (antes eran 2) para dar tiempo de sobra a que la renovación
+  // termine antes de que el token caduque de verdad, incluso si el panel estaba en segundo plano.
+  if(cfg.kkToken && cfg.kkRefresh && cfg.kkExpires && Date.now() > cfg.kkExpires - 300000) await kkRefreshToken();
+}
+async function kkFetch(url, opts){
+  opts = opts || {};
+  await kkEnsureFresh();
+  const go = () => fetch(url, { ...opts, headers:{ ...(opts.headers||{}), ...kkHeaders() } });
+  let r = await go();
+  if(r.status === 401 && cfg.kkRefresh && await kkRefreshToken()) r = await go();   // reintento con el token nuevo
+  return r;
+}
+// Mantiene el token fresco aunque el panel esté abierto sin usarse
+setInterval(() => { kkEnsureFresh(); }, 60000);
+document.addEventListener('visibilitychange', () => { if(!document.hidden) kkEnsureFresh(); });
+async function kickStartLogin(){
+  syncFormToCfg();
+  if(!cfg.kkClient || !cfg.kkSecret){ note('kkNote','Faltan el Client ID y el Client Secret de tu app de Kick.'); return; }
+  if(!canRedirect()){ note('kkNote','Abre esta página desde https:// o desde http://localhost. Mientras tanto usa el token manual.'); return; }
+  note('kkNote','Redirigiendo a Kick…','info');
+  const verifier = b64url(crypto.getRandomValues(new Uint8Array(48)));
+  const challenge = b64url(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(verifier)));
+  const st = rand(); sessionStorage.setItem('tp.kk.state', st); sessionStorage.setItem('tp.kk.verifier', verifier);
+  location.href = 'https://id.kick.com/oauth/authorize?' + new URLSearchParams({
+    response_type:'code', client_id:cfg.kkClient, redirect_uri:redirectUri(),
+    scope:'user:read channel:read channel:write', code_challenge:challenge, code_challenge_method:'S256', state: st });
+}
+async function kickResolveBroadcaster(){
+  if(cfg.kkBroadcaster) return cfg.kkBroadcaster;
+  const j = await kkGetJson('https://api.kick.com/public/v1/channels?slug='+encodeURIComponent((cfg.kkChannel||'').trim().toLowerCase()));
+  const id = j && j.data && j.data[0] && j.data[0].broadcaster_user_id;
+  if(!id) throw new Error('Kick: no encontré el canal "'+(cfg.kkChannel||'')+'". Revisa el nombre en ⚙ Ajustes.');
+  cfg.kkBroadcaster = String(id); save(); return cfg.kkBroadcaster;
+}
+async function kickFetchMe(){
+  try{
+    const r = await kkFetch('https://api.kick.com/public/v1/users', { headers: kkHeaders() });
+    const j = await r.json(); if(j && j.data && j.data[0]) cfg.kkLogin = j.data[0].name || '';
+  }catch{}
+}
+async function kkLoadAvatar(id){
+  let url = '';
+  try{
+    const r = await kkFetch('https://api.kick.com/public/v1/users?id='+encodeURIComponent(id), { headers: kkHeaders() });
+    const j = await r.json(); const u = j && j.data && j.data[0];
+    if(u && u.profile_picture) url = u.profile_picture;
+  }catch{}
+  if(!url){ // respaldo: el usuario del propio token
+    try{
+      const r = await kkFetch('https://api.kick.com/public/v1/users', { headers: kkHeaders() });
+      const j = await r.json(); const u = j && j.data && j.data[0];
+      if(u && u.profile_picture) url = u.profile_picture;
+    }catch{}
+  }
+  if(url){ $('#kkAvatar').src = url; $('#kkPrevAvatar').src = url; }
+}
+async function kkGetCategoryImg(id){
+  try{
+    const r = await kkFetch('https://api.kick.com/public/v1/categories/'+encodeURIComponent(id), { headers: kkHeaders() });
+    const j = await r.json(); const c = Array.isArray(j && j.data) ? j.data[0] : (j && j.data);
+    return (c && (c.thumbnail || c.banner)) || '';
+  }catch{ return ''; }
+}
+async function kkFetchCurrent(){
+  if(!cfg.kkToken){ setPillStatus('kick','idle'); return; }
+  setPillStatus('kick','connecting','Cargando datos de Kick…');
+  try{
+    const id = await kickResolveBroadcaster();
+    const j = await kkGetJson('https://api.kick.com/public/v1/channels?broadcaster_user_id='+id);
+    const c = j && j.data && j.data[0];
+    if(!c) throw new Error('Kick: no encontré datos del canal.');
+    state.kick.title = c.stream_title || '';
+    state.kick.catId = c.category ? String(c.category.id) : ''; state.kick.catName = c.category ? c.category.name : '';
+    state.kick.catImg = c.category ? (c.category.thumbnail || c.category.banner || '') : '';
+    if(state.kick.catId && !state.kick.catImg){ state.kick.catImg = await kkGetCategoryImg(state.kick.catId); }
+    state.kick.tags = Array.isArray(c.custom_tags) ? c.custom_tags.slice(0,10) : [];
+    state.kick.live = !!(c.stream && c.stream.is_live);
+    // Esto es lo que hace que la categoría actual del canal aparezca ya seleccionada al abrir
+    // el panel (y no como "Ninguna categoría seleccionada"): se guarda como punto de partida
+    // para poder "Restablecer", y así aplicar sin tocar nada no manda un category_id vacío.
+    state.kick.saved = { title: state.kick.title, catId: state.kick.catId, catName: state.kick.catName, tags: [...state.kick.tags] };
+    kkLoadAvatar(id);
+    catSelUpdate('kk','kick');
+    $('#kkLive').classList.toggle('on', state.kick.live);
+    syncPreview(); refreshDirty('kick');
+    setPillStatus('kick','ok','Kick conectado');
+    $('#kkSynced').textContent = 'Sincronizado ' + new Date().toLocaleTimeString();
+  }catch(e){
+    if(e && e.auth){ kkClearSession(e.message); return; }
+    setPillStatus('kick','error', (e && e.message) || 'Error al cargar datos de Kick');
+    note2('kkNote2', 'Kick: '+((e && e.message) || 'no se pudieron cargar los datos.'), 'err');
+  }
+}
+// Kick responde con "message":"OK" incluso cuando todo sale bien, así que NO se puede usar
+// ese campo para detectar errores: se mira el código HTTP (r.ok).
+async function kkGetJson(url){
+  let r;
+  try{ r = await kkFetch(url); }
+  catch(e){ throw new Error('No pude conectar con Kick (revisa tu conexión o el bloqueo del navegador).'); }
+  let j = null; try{ j = await r.json(); }catch{}
+  if(r.status === 401){ const e = new Error('El token de Kick caducó o no es válido. Vuelve a conectar la cuenta en ⚙ Ajustes.'); e.auth = true; throw e; }
+  if(!r.ok) throw new Error('Kick: ' + ((j && j.message) || ('error ' + r.status)));
+  return j;
+}
+function kkMapCategories(j){
+  const arr = Array.isArray(j && j.data) ? j.data : [];
+  return arr.filter(c => c && c.id != null && c.name)
+    .map(c => ({ id:String(c.id), name:String(c.name), img:c.thumbnail || c.banner || '' }));
+}
+async function kkSearchCategories(q){
+  if(!cfg.kkToken) throw new Error('Conecta tu cuenta de Kick en ⚙ Ajustes primero.');
+  q = q.replace(/,/g,' ').trim();
+  let v2Error = null, v2Worked = false;
+  // 1) Endpoint actual (v2): filtra por nombre. Según la documentación oficial de Kick
+  // (api.kick.com/swagger/doc.yaml), el parámetro "name" exige un mínimo de 3 caracteres;
+  // con menos, Kick devuelve "Invalid request", así que directamente no se llama y se
+  // pasa al respaldo v1, que no tiene ese mínimo.
+  if(q.length >= 3){
+    try{
+      const res = kkMapCategories(await kkGetJson('https://api.kick.com/public/v2/categories?limit=50&name=' + encodeURIComponent(q)));
+      v2Worked = true;
+      if(res.length) return res;
+    }catch(e){ if(e.auth){ kkClearSession(e.message); throw e; } v2Error = e; console.warn('Kick v2 categories:', e); }
+  }
+  // 2) Respaldo: endpoint anterior (v1) con búsqueda por texto
+  try{
+    return kkMapCategories(await kkGetJson('https://api.kick.com/public/v1/categories?q=' + encodeURIComponent(q)));
+  }catch(e){
+    if(e.auth){ kkClearSession(e.message); throw e; }
+    console.warn('Kick v1 categories:', e);
+    if(v2Worked) return [];          // v2 respondió bien pero sin coincidencias
+    throw v2Error || e;
+  }
+}
+async function kkApplyChanges(){
+  if(!cfg.kkToken){ note2('kkNote2','Conecta tu cuenta de Kick en ⚙ Ajustes primero.','err'); return; }
+  const s = state.kick, btn = $('#kkApply');
+  const body = {};
+  if(s.title.trim()) body.stream_title = s.title.trim();
+  // Kick exige que category_id sea un entero >= 1; si por lo que sea llegara un valor
+  // no numérico o 0 (p. ej. un id mal formado), no se manda y así no se produce el
+  // "Invalid request" de Kick por un category_id inválido.
+  const catNum = Number(s.catId);
+  const catValid = s.catId && Number.isInteger(catNum) && catNum >= 1;
+  if(s.catId && !catValid){ console.warn('Kick: category_id inválido, no se envía:', s.catId); }
+  if(catValid) body.category_id = catNum;
+  body.custom_tags = s.tags;
+  if(!body.stream_title && !catValid && !s.tags.length){ note2('kkNote2','No hay nada que aplicar todavía.','err'); return; }
+  btn.disabled = true; note2('kkNote2','Aplicando cambios…','info');
+  try{
+    const r = await kkFetch('https://api.kick.com/public/v1/channels', {
+      method:'PATCH', headers:{ ...kkHeaders(), 'Content-Type':'application/json' }, body: JSON.stringify(body)
+    });
+    if(r.status === 401){ kkClearSession('El token de Kick caducó. Vuelve a conectar la cuenta en ⚙ Ajustes.'); throw new Error('El token caducó, vuelve a conectar la cuenta en Ajustes.'); }
+    if(!r.ok){
+      const j = await r.json().catch(()=>({}));
+      console.warn('Kick PATCH /channels error', r.status, j, 'body enviado:', body);
+      const extra = j && j.data && typeof j.data === 'object' ? ' — ' + JSON.stringify(j.data) : '';
+      throw new Error((j.message || ('error '+r.status)) + extra);
+    }
+    s.saved = { title: s.title, catId: s.catId, catName: s.catName, tags: [...s.tags] };
+    refreshDirty('kick');
+    note2('kkNote2','Cambios aplicados en Kick ✓','ok');
+    toast('✓ KICK ACTUALIZADO');
+    confirmChime();
+    $('#kkSynced').textContent = 'Aplicado ' + new Date().toLocaleTimeString();
+  }catch(e){
+    note2('kkNote2', 'Kick: '+e.message, 'err');
+    toast('✕ ERROR EN KICK','err');
+  }finally{ btn.disabled = false; }
+}
+$('#kkApply').onclick = kkApplyChanges;
+$('#kkReset').onclick = () => {
+  const s = state.kick;
+  s.catId = s.saved.catId; s.catName = s.saved.catName;
+  setSharedTitle(s.saved.title); sharedTagUI.setAll(s.saved.tags);
+  catSelUpdate('kk','kick'); syncPreview(); refreshDirty('kick');
+};
+wireCatSearch('kk','kick', kkSearchCategories);
+
+/* ---------- Aplicar en ambas plataformas a la vez ---------- */
+async function applyBothPlatforms(btn, noteId){
+  btn.disabled = true;
+  const jobs = [];
+  if(cfg.twToken) jobs.push(twApplyChanges());
+  if(cfg.kkToken) jobs.push(kkApplyChanges());
+  if(!jobs.length){
+    toast('✕ CONECTA UNA CUENTA PRIMERO','err');
+    if(noteId) note2(noteId,'Conecta al menos una cuenta en ⚙ Ajustes.','err');
+    btn.disabled = false; return;
+  }
+  if(noteId) note2(noteId,'Aplicando…','info');
+  await Promise.allSettled(jobs);
+  if(noteId) note2(noteId,'Listo ✓','ok');
+  btn.disabled = false;
+}
+$('#applyAllBtn').onclick = () => applyBothPlatforms($('#applyAllBtn'));
+$('#sharedApply').onclick = () => applyBothPlatforms($('#sharedApply'), 'sharedNote');
+
+/* ---------- OAuth: retorno ---------- */
+async function handleOAuthReturn(){
+  const hash = new URLSearchParams(location.hash.slice(1)), qs = new URLSearchParams(location.search);
+  if(hash.get('access_token')){
+    const ok = hash.get('state') === sessionStorage.getItem('tp.tw.state');
+    const token = hash.get('access_token'); history.replaceState(null,'',location.pathname);
+    if(!ok){ note('twNote','Twitch: la respuesta no coincide (state). Inténtalo otra vez.','err'); return; }
+    try{ const v = await twValidate(token); twStoreAuth(token, v); note('twNote','Twitch conectado como '+v.login,'ok'); }
+    catch(e){ note('twNote','Twitch: '+e.message,'err'); }
+  } else if(qs.get('code') && sessionStorage.getItem('tp.kk.verifier')){
+    const code = qs.get('code'), ok = qs.get('state') === sessionStorage.getItem('tp.kk.state');
+    const verifier = sessionStorage.getItem('tp.kk.verifier'); history.replaceState(null,'',location.pathname);
+    if(!ok){ note('kkNote','Kick: la respuesta no coincide (state). Inténtalo otra vez.','err'); return; }
+    try{
+      const r = await fetch('https://id.kick.com/oauth/token', { method:'POST',
+        headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body: new URLSearchParams({ grant_type:'authorization_code', client_id:cfg.kkClient, client_secret:cfg.kkSecret,
+          redirect_uri:redirectUri(), code_verifier:verifier, code }) });
+      const j = await r.json(); if(!j.access_token) throw new Error('sin token en la respuesta');
+      kkStoreTokens(j); await kickFetchMe(); save(); note('kkNote','Kick conectado'+(cfg.kkLogin?' como '+cfg.kkLogin:''),'ok');
+    }catch(e){ note('kkNote','Kick: no se pudo completar el inicio de sesión ('+(e instanceof TypeError ? 'el navegador bloqueó la conexión con Kick' : e.message)+'). Usa el token manual.','err'); }
+  }
+  await refreshAll();
+}
+
+/* ---------- Ajustes: dialog ---------- */
+const dlg = $('#dlg');
+function fillForm(){
+  $('#twChannel').value = cfg.twChannel; $('#twClient').value = cfg.twClient; $('#twToken').value = '';
+  $('#kkChannel').value = cfg.kkChannel; $('#kkClient').value = cfg.kkClient; $('#kkSecret').value = cfg.kkSecret; $('#kkToken').value = '';
+  $('#volRange').value = cfg.volume; $('#volVal').textContent = cfg.volume+'%'; $('#sndOn').checked = !!cfg.soundOn;
+  $('#twAcct').textContent = cfg.twLogin ? 'Conectado como '+cfg.twLogin : '';
+  $('#kkAcct').textContent = cfg.kkLogin ? 'Conectado como '+cfg.kkLogin : '';
+}
+$('#setBtn').onclick = () => {
+  fillForm();
+  ['twNote','kkNote'].forEach(n => note(n,''));
+  $('#redirUrl').textContent = canRedirect() ? redirectUri() : 'Abre la página desde https:// o http://localhost';
+  note('fileNote', canRedirect() ? '' : 'Estás abriendo el archivo directo: los botones "Conectar" solo funcionan desde https:// o http://localhost. Mientras tanto puedes pegar un token manual.', 'info');
+  dlg.showModal();
+};
+$('#copyRedir').onclick = () => { if(canRedirect() && navigator.clipboard) navigator.clipboard.writeText(redirectUri()).catch(()=>{}); };
+$('#dlgClose').onclick = $('#dlgCancel').onclick = () => dlg.close();
+$('#dlgSave').onclick = () => {
+  cfg.twChannel = $('#twChannel').value.trim() || DEF.twChannel;
+  cfg.twClient = $('#twClient').value.trim();
+  const prevKk = cfg.kkChannel;
+  cfg.kkChannel = $('#kkChannel').value.trim() || DEF.kkChannel;
+  if(cfg.kkChannel !== prevKk) cfg.kkBroadcaster = '';
+  cfg.kkClient = $('#kkClient').value.trim(); cfg.kkSecret = $('#kkSecret').value.trim();
+  cfg.volume = Number($('#volRange').value); cfg.soundOn = $('#sndOn').checked;
+  save();
+  $('#twPrevName').textContent = cfg.twChannel; $('#kkPrevName').textContent = cfg.kkChannel;
+  dlg.close();
+  refreshAll();
+};
+$('#volRange').addEventListener('input', () => { $('#volVal').textContent = $('#volRange').value+'%'; });
+$('#sndTest').onclick = () => confirmChime(Number($('#volRange').value));
+
+$('#twConnect').onclick = twStartLogin;
+$('#twLogout').onclick = () => { cfg.twToken=''; cfg.twLogin=''; cfg.twUserId=''; cfg.twScopes=''; save(); fillForm(); refreshAll(); note('twNote','Cuenta de Twitch desconectada.','info'); };
+$('#twTokenSave').onclick = async () => {
+  syncFormToCfg();
+  const tok = $('#twToken').value.trim().replace(/^oauth:/,''); if(!tok){ note('twNote','Pega un token.'); return; }
+  try{ const v = await twValidate(tok);
+    if(!(v.scopes||[]).includes('channel:manage:broadcast')){ note('twNote','Ese token no tiene el permiso channel:manage:broadcast.','err'); return; }
+    twStoreAuth(tok, v); note('twNote','Token válido, conectado como '+v.login,'ok'); fillForm(); refreshAll();
+  }catch(e){ note('twNote','Twitch: '+e.message,'err'); }
+};
+
+$('#kkConnect').onclick = kickStartLogin;
+$('#kkLogout').onclick = () => { cfg.kkToken=''; cfg.kkRefresh=''; cfg.kkExpires=0; cfg.kkLogin=''; cfg.kkBroadcaster=''; save(); fillForm(); refreshAll(); note('kkNote','Cuenta de Kick desconectada.','info'); };
+$('#kkTokenSave').onclick = async () => {
+  syncFormToCfg();
+  const tok = $('#kkToken').value.trim(); if(!tok){ note('kkNote','Pega un token.'); return; }
+  cfg.kkToken = tok; cfg.kkRefresh = ''; cfg.kkExpires = 0; save();
+  try{ await kickFetchMe(); save(); note('kkNote','Token guardado'+(cfg.kkLogin?', conectado como '+cfg.kkLogin:''),'ok'); fillForm(); refreshAll(); }
+  catch(e){ note('kkNote','Kick: token guardado pero no pude verificarlo.','info'); }
+};
+
+/* ---------- Arranque ---------- */
+async function refreshAll(){
+  $('#twWho').textContent = cfg.twLogin ? ('@'+cfg.twLogin) : 'Sin cuenta conectada';
+  $('#kkWho').textContent = cfg.kkLogin ? ('@'+cfg.kkLogin) : 'Sin cuenta conectada';
+  $('#twPrevName').textContent = cfg.twChannel || 'tyravt';
+  $('#kkPrevName').textContent = cfg.kkChannel || 'tyravt';
+  if(cfg.twToken && cfg.twUserId){ await twLoadAvatar(); await twFetchCurrent(); } else setPillStatus('twitch','idle');
+  if(cfg.kkToken){ await kkFetchCurrent(); } else setPillStatus('kick','idle');
+  syncSharedTitleFromLoad();
+  syncSharedTagsFromLoad();
+  syncPreview();
+}
+(async () => { await handleOAuthReturn(); })();
+})();
+
+</script>
+</body>
+</html>
