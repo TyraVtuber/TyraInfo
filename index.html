@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TyraPanel · Info de stream</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#090614; --bg2:#0f0a20; --panel:#150e2b; --panel2:#1e1440; --line:#33226e;
+  --purple:#8b5cf6; --purple-deep:#4c1d95; --pink:#ff1fd6; --pink-soft:#ff8cec; --cyan:#22e6ea;
+  --text:#ece6f7; --muted:#9a8bb8; --tw:#a970ff; --kick:#53fc18; --yt:#ff3d3d;
+  --ok:#5dffb1; --warn:#ffc857; --err:#ff4d6d;
+  --pink-rgb:255,31,214; --purple-rgb:139,92,246; --cyan-rgb:34,230,234;
+  --bg-rgb:9,6,20; --panel-rgb:21,14,43; --panel2-rgb:30,20,64; --bg2-rgb:15,10,32;
+  --hdr1-rgb:28,15,50; --hdr2-rgb:16,8,28;
+  --brand-text:#8ff5ff; --faint:#6d5e8a; --on-accent:#0c0418; --crest-filter:none;
+  --glow:0 0 6px rgba(var(--pink-rgb),.65),0 0 20px rgba(var(--pink-rgb),.3);
+  --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --display:'Orbitron','Segoe UI',system-ui,sans-serif;
+  --fs:clamp(13px,1.6vw,15.5px);
+}
+/* cada tema define la paleta completa; todo el diseño sale de estas variables */
+:root[data-theme=midnight]{
+  --bg:#060a14; --bg2:#0b1222; --panel:#0e182c; --panel2:#142139; --line:#223658;
+  --purple:#4f7dff; --purple-deep:#1c3577; --pink:#38bdf8; --pink-soft:#a8e3ff; --cyan:#818cf8;
+  --text:#e4ecfa; --muted:#8a9bbb; --faint:#56688a; --brand-text:#bfe9ff;
+  --pink-rgb:56,189,248; --purple-rgb:79,125,255; --cyan-rgb:129,140,248;
+  --bg-rgb:6,10,20; --panel-rgb:14,24,44; --panel2-rgb:20,33,57; --bg2-rgb:11,18,34;
+  --hdr1-rgb:15,26,48; --hdr2-rgb:8,14,28; --on-accent:#04121f; --crest-filter:hue-rotate(25deg) saturate(1.1);
+}
+:root[data-theme=sakura]{
+  --bg:#130a10; --bg2:#1c0f18; --panel:#251420; --panel2:#30192a; --line:#512a44;
+  --purple:#d36fae; --purple-deep:#6e2453; --pink:#ff8fbf; --pink-soft:#ffd3e4; --cyan:#ffb9a1;
+  --text:#fbeaf1; --muted:#c79cb1; --faint:#8a6377; --brand-text:#ffd3e4;
+  --pink-rgb:255,143,191; --purple-rgb:211,111,174; --cyan-rgb:255,185,161;
+  --bg-rgb:19,10,16; --panel-rgb:37,20,32; --panel2-rgb:48,25,42; --bg2-rgb:28,15,24;
+  --hdr1-rgb:42,21,36; --hdr2-rgb:22,11,19; --on-accent:#2a0d1c; --crest-filter:hue-rotate(150deg) saturate(.85) brightness(1.08);
+}
+:root[data-theme=matrix]{
+  --bg:#030907; --bg2:#06110c; --panel:#0a1912; --panel2:#0f2419; --line:#1c4630;
+  --purple:#16a34a; --purple-deep:#0f4426; --pink:#3ee07a; --pink-soft:#b7f5cb; --cyan:#a3e635;
+  --text:#dcfbe6; --muted:#83b592; --faint:#4c7a5b; --brand-text:#b7f5cb;
+  --pink-rgb:62,224,122; --purple-rgb:22,163,74; --cyan-rgb:163,230,53;
+  --bg-rgb:3,9,7; --panel-rgb:10,25,18; --panel2-rgb:15,36,25; --bg2-rgb:6,17,12;
+  --hdr1-rgb:12,30,20; --hdr2-rgb:5,14,10; --on-accent:#02140a; --crest-filter:hue-rotate(-65deg) saturate(1.05);
+}
+:root[data-theme=ember]{
+  --bg:#110904; --bg2:#1a0e07; --panel:#23130a; --panel2:#2e190d; --line:#5a3117;
+  --purple:#ea580c; --purple-deep:#6c2a0b; --pink:#fbbf24; --pink-soft:#fde7a6; --cyan:#fb923c;
+  --text:#fdf1e4; --muted:#c8a487; --faint:#8a6a50; --brand-text:#fde7a6;
+  --pink-rgb:251,191,36; --purple-rgb:234,88,12; --cyan-rgb:251,146,60;
+  --bg-rgb:17,9,4; --panel-rgb:35,19,10; --panel2-rgb:46,25,13; --bg2-rgb:26,14,7;
+  --hdr1-rgb:40,22,11; --hdr2-rgb:20,11,5; --on-accent:#1c0c02; --crest-filter:hue-rotate(195deg) saturate(1.2) brightness(1.05);
+}
+:root[data-theme=graphite]{
+  --bg:#0a0a0c; --bg2:#111114; --panel:#17171b; --panel2:#1f1f24; --line:#34343c;
+  --purple:#a1a1aa; --purple-deep:#3f3f46; --pink:#f4f4f5; --pink-soft:#ffffff; --cyan:#cfd2d8;
+  --text:#ececee; --muted:#9a9aa3; --faint:#62626b; --brand-text:#ffffff;
+  --pink-rgb:244,244,245; --purple-rgb:161,161,170; --cyan-rgb:207,210,216;
+  --bg-rgb:10,10,12; --panel-rgb:23,23,27; --panel2-rgb:31,31,36; --bg2-rgb:17,17,20;
+  --hdr1-rgb:26,26,30; --hdr2-rgb:12,12,14; --on-accent:#0a0a0c; --crest-filter:grayscale(1) brightness(1.35);
+  --glow:0 0 6px rgba(255,255,255,.35),0 0 18px rgba(255,255,255,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;scrollbar-width:none;background:var(--bg)}
+html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}
+body{
+  font-family:var(--font);color:var(--text);font-size:var(--fs);
+  background:
+    radial-gradient(900px 500px at 85% -10%,rgba(var(--purple-rgb),.22),transparent 60%),
+    radial-gradient(700px 500px at -10% 110%,rgba(var(--pink-rgb),.13),transparent 60%),
+    radial-gradient(600px 400px at 110% 105%,rgba(var(--cyan-rgb),.08),transparent 60%),
+    var(--bg);
+  min-height:100dvh;transition:background-color .3s;
+}
+.app{position:relative;min-height:100dvh;display:flex;flex-direction:column;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+
+/* ---------- Barra superior ---------- */
+header{display:flex;align-items:center;gap:7px;padding:10px 12px;flex-wrap:wrap;
+  background:linear-gradient(180deg,rgba(var(--hdr1-rgb),.95),rgba(var(--hdr2-rgb),.85));
+  border-bottom:1px solid var(--line);position:relative;z-index:3;max-height:200px;overflow:hidden;
+  transition:max-height .3s ease,opacity .22s ease,padding .3s ease,border-color .3s ease}
+header::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--cyan),var(--pink),var(--purple),transparent);opacity:.85}
+.app.hdr-collapsed header{max-height:0;padding-top:0;padding-bottom:0;opacity:0;border-bottom-color:transparent;pointer-events:none}
+#hdrToggle{width:29px;justify-content:center;padding:0 !important}
+#hdrToggle svg{width:13px;height:13px;transition:.2s}
+.app.hdr-collapsed #hdrToggle svg{transform:rotate(180deg)}
+#hdrPeek{position:fixed;top:0;left:50%;transform:translate(-50%,-100%);z-index:20;display:flex;align-items:center;gap:6px;cursor:pointer;
+  background:var(--panel2);border:1px solid var(--line);border-top:0;color:var(--muted);padding:5px 16px 6px;font:600 .74em var(--font);
+  letter-spacing:.04em;box-shadow:0 6px 16px rgba(0,0,0,.4);transition:transform .28s ease,color .18s,border-color .18s;border-radius:0 0 12px 12px}
+.app.hdr-collapsed #hdrPeek{transform:translate(-50%,0)}
+#hdrPeek:hover{color:var(--text);border-color:var(--cyan)}
+#hdrPeek svg{width:11px;height:11px}
+.brand{display:flex;align-items:center;gap:9px;margin-right:auto}
+.crest{height:36px;width:auto;flex:none;filter:var(--crest-filter) drop-shadow(0 0 7px rgba(var(--cyan-rgb),.4));transition:filter .3s}
+.brand h1{font-family:var(--display);font-weight:800;font-size:clamp(14px,2.2vw,18px);letter-spacing:.14em;color:var(--brand-text);text-shadow:0 0 12px rgba(var(--cyan-rgb),.4)}
+.brand h1 b{color:var(--pink);text-shadow:var(--glow)}
+.brand small{display:block;color:var(--muted);font-size:.68em;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+.pills{display:flex;gap:7px}
+.pill,.iconbtn{display:inline-flex;align-items:center;gap:7px;cursor:pointer;color:var(--text);
+  background:var(--panel2);border:1px solid var(--line);font:600 .82em var(--font);transition:.18s}
+.pill{width:28px;height:24px;padding:0;border-radius:999px;justify-content:center}
+.iconbtn{min-height:29px;padding:0 10px;gap:5px;border-radius:10px}
+.pill:hover,.iconbtn:hover{border-color:var(--cyan);box-shadow:0 0 12px rgba(var(--cyan-rgb),.3)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--faint);box-shadow:0 0 0 2px rgba(255,255,255,.04)}
+[data-s=ok] .dot{background:var(--ok);box-shadow:0 0 8px var(--ok)}
+[data-s=connecting] .dot{background:var(--warn);animation:pulse 1s infinite}
+[data-s=error] .dot{background:var(--err);box-shadow:0 0 8px var(--err)}
+@keyframes pulse{50%{opacity:.35}}
+
+/* ---------- Contenido ---------- */
+main{flex:1;padding:16px;display:flex;flex-direction:column;gap:18px;max-width:1380px;margin:0 auto;width:100%}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topbar h2{font:800 .95em var(--display);letter-spacing:.1em}
+.topbar h2 b{color:var(--cyan)}
+.applyAll{cursor:pointer;border:1px solid var(--pink);color:#fff;background:linear-gradient(135deg,rgba(var(--pink-rgb),.4),rgba(var(--purple-rgb),.35));
+  padding:9px 18px;font:700 .78em var(--display);letter-spacing:.1em;box-shadow:var(--glow);border-radius:10px;transition:.15s}
+.applyAll:hover{filter:brightness(1.12)}
+.applyAll:disabled{opacity:.45;cursor:wait}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:1100px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.grid{grid-template-columns:1fr}}
+
+.card{background:linear-gradient(180deg,rgba(var(--panel-rgb),.9),rgba(var(--bg2-rgb),.9));border:1px solid var(--line);
+  border-radius:16px;padding:16px 18px 18px;display:flex;flex-direction:column;gap:14px;position:relative}
+.card.tw{border-color:rgba(169,112,255,.4)}
+.card.kk{border-color:rgba(83,252,24,.35)}
+.card.yt{border-color:rgba(255,61,61,.4)}
+.card.shared{border-color:rgba(var(--pink-rgb),.4);overflow:hidden}
+.card.shared::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,var(--pink),var(--cyan),var(--purple));opacity:.9}
+.card.shared .plat b{color:var(--pink-soft);text-shadow:0 0 10px rgba(var(--pink-rgb),.35)}
+.card-h{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.card-h .who{display:flex;align-items:center;gap:9px;min-width:0}
+.avatar{width:34px;height:34px;object-fit:cover;border:1px solid var(--line);border-radius:50%;background:var(--bg2);flex:none}
+.avatar:not([src]),.avatar[src=""]{visibility:hidden}
+.avwrap{position:relative;flex:none;display:grid;place-items:center}
+.avwrap::before{content:attr(data-i);position:absolute;inset:0;display:grid;place-items:center;border-radius:50%;border:1px solid var(--line);background:var(--panel2);font:800 .8em var(--display);color:var(--muted)}
+.avwrap img{position:relative}
+.avwrap[data-i=""]::before{display:none}
+.plat{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.plat b{font:800 .82em var(--display);letter-spacing:.08em}
+.card.tw .plat b{color:var(--tw)} .card.kk .plat b{color:var(--kick)} .card.yt .plat b{color:#ff7070}
+.plat span{font-size:.72em;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.badges{display:flex;align-items:center;gap:8px}
+.livebadge{font:700 .66em var(--display);letter-spacing:.08em;padding:3px 8px;border:1px solid var(--err);color:#ff9db0;border-radius:6px;
+  background:rgba(255,77,109,.1);display:none;align-items:center;gap:5px}
+.livebadge.on{display:inline-flex}
+.livebadge.sched{border-color:var(--warn);color:var(--warn);background:rgba(255,200,87,.08)}
+.livebadge i{width:6px;height:6px;border-radius:50%;background:currentColor;box-shadow:0 0 6px currentColor}
+.synced{font-size:.68em;color:var(--muted)}
+
+.field{display:grid;gap:6px}
+.field>label{font-size:.74em;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;display:flex;justify-content:space-between;gap:8px}
+.field>label .cnt{color:var(--faint);text-transform:none;letter-spacing:0;font-size:1em}
+.field>label .cnt.over{color:var(--warn)}
+#sharedTitle{overflow:hidden;min-height:48px;line-height:1.4}
+textarea,input[type=text],input[type=password],select{background:var(--bg2);color:var(--text);border:1px solid var(--line);border-radius:8px;
+  padding:10px 12px;font:inherit;outline:none;width:100%;resize:none;font-size:1em}
+select{cursor:pointer}
+textarea:focus,input[type=text]:focus,input[type=password]:focus,select:focus{border-color:var(--cyan);box-shadow:0 0 0 1px var(--cyan),0 0 14px rgba(var(--cyan-rgb),.25)}
+textarea::placeholder,input::placeholder{color:var(--faint)}
+.subinfo{font-size:.76em;color:var(--muted);line-height:1.45}
+.subinfo b{color:var(--text);font-weight:600}
+
+.catwrap{position:relative}
+.catsel{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--bg2);border-radius:8px;padding:6px 8px;margin-top:6px;font-size:.86em;color:var(--muted);min-height:48px}
+.catsel.has{color:var(--text)}
+.catsel img{width:26px;height:34px;object-fit:cover;border:1px solid var(--line);border-radius:4px;flex:none;background:var(--panel2)}
+.catsel .catname{flex:1;min-width:0}
+.catsel .catname small{display:block;color:var(--faint);font-size:.82em}
+.catsel .clr{cursor:pointer;color:var(--muted);padding:2px 6px}
+.catsel .clr:hover{color:var(--err)}
+.catdrop{position:absolute;left:0;right:0;top:calc(100% + 2px);background:var(--panel);border:1px solid var(--cyan);border-radius:10px;
+  box-shadow:0 0 18px rgba(var(--cyan-rgb),.18);z-index:5;max-height:260px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--purple-deep) transparent}
+.catdrop[hidden]{display:none}
+.catitem{display:flex;align-items:center;gap:9px;padding:7px 9px;cursor:pointer;font-size:.86em}
+.catitem:hover{background:rgba(var(--pink-rgb),.14)}
+.catitem img{width:28px;height:37px;object-fit:cover;border:1px solid var(--line);border-radius:4px;flex:none;background:var(--panel2)}
+.catempty{padding:9px;font-size:.8em;color:var(--muted)}
+
+.tagbox{display:flex;flex-wrap:wrap;gap:6px;border:1px solid var(--line);background:var(--bg2);border-radius:10px;padding:7px;min-height:42px;align-items:center}
+.tagbox:focus-within{border-color:var(--cyan);box-shadow:0 0 0 1px var(--cyan)}
+.tag-chip{display:inline-flex;align-items:center;gap:6px;background:rgba(var(--purple-rgb),.2);border:1px solid var(--purple);
+  color:var(--text);font:600 .78em var(--font);padding:4px 8px 4px 10px;border-radius:8px}
+.tag-chip button{cursor:pointer;color:var(--muted);font-size:1em;line-height:1;background:none;border:0;padding:0}
+.tag-chip button:hover{color:var(--err)}
+.tagbox input{flex:1;min-width:90px;background:transparent;border:0;color:var(--text);font:inherit;outline:none;padding:4px}
+.taghint{font-size:.68em;color:var(--faint)}
+
+.card-f{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto}
+.applyBtn{cursor:pointer;border:0;color:#fff;font:700 .76em var(--display);letter-spacing:.1em;padding:9px 16px;border-radius:10px;transition:.15s}
+.card.tw .applyBtn{background:linear-gradient(135deg,var(--tw),#5b2bb5);box-shadow:0 0 14px rgba(169,112,255,.4)}
+.card.kk .applyBtn{background:linear-gradient(135deg,var(--kick),#178a3c);box-shadow:0 0 14px rgba(83,252,24,.3);color:#06210c}
+.card.yt .applyBtn{background:linear-gradient(135deg,#ff4e4e,#b31212);box-shadow:0 0 14px rgba(255,61,61,.35)}
+.applyBtn.shared{background:linear-gradient(135deg,var(--pink),var(--cyan));box-shadow:0 0 14px rgba(var(--pink-rgb),.35);color:var(--on-accent)}
+.applyBtn:hover{filter:brightness(1.12)}
+.applyBtn:disabled{opacity:.5;cursor:wait}
+.resetBtn{cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--muted);font:600 .76em var(--font);padding:8px 12px;border-radius:10px}
+.resetBtn:hover{border-color:var(--muted);color:var(--text)}
+.note{font-size:.76em;line-height:1.4;flex:1 1 100%}
+.note.ok{color:var(--ok)} .note.err{color:#ff9db0} .note.info{color:var(--muted)}
+.dirty-dot{width:7px;height:7px;border-radius:50%;background:var(--warn);box-shadow:0 0 6px var(--warn);display:none}
+.dirty .dirty-dot{display:inline-block}
+
+/* ---------- Vista previa ---------- */
+.sugg{border:1px dashed rgba(var(--pink-rgb),.35);background:rgba(var(--pink-rgb),.04);border-radius:12px;padding:10px 11px;display:grid;gap:8px;animation:suggIn .25s ease}
+.sugg[hidden]{display:none}
+@keyframes suggIn{from{opacity:0;transform:translateY(-4px)}}
+.sugg-h{display:flex;align-items:center;gap:8px;font-size:.74em;color:var(--muted)}
+.sugg-h b{color:var(--pink-soft);font-weight:600}
+.sugg-h .sp{margin-left:auto;display:flex;gap:4px}
+.sugg-h button{cursor:pointer;background:none;border:1px solid var(--line);color:var(--muted);border-radius:7px;padding:3px 8px;font:600 .95em var(--font)}
+.sugg-h button:hover{color:var(--text);border-color:var(--cyan)}
+.sugg-list{display:grid;gap:6px}
+.sugg-list button{cursor:pointer;text-align:left;display:flex;align-items:center;gap:8px;background:var(--bg2);border:1px solid var(--line);color:var(--text);
+  border-radius:9px;padding:7px 10px;font:500 .84em var(--font);line-height:1.35;transition:.15s}
+.sugg-list button:hover{border-color:var(--pink);box-shadow:0 0 10px rgba(var(--pink-rgb),.2);transform:translateX(2px)}
+.sugg-list button span{flex:1;min-width:0;word-break:break-word}
+.sugg-list button small{flex:none;font-size:.78em;color:var(--faint);border:1px solid var(--line);border-radius:5px;padding:0 5px}
+.sugg-list button small.past{color:var(--cyan);border-color:rgba(var(--cyan-rgb),.4)}
+.sugg-empty{font-size:.78em;color:var(--muted)}
+.ideaBtn{cursor:pointer;background:none;border:1px solid var(--line);color:var(--muted);border-radius:7px;padding:1px 8px;font:600 1em var(--font);text-transform:none;letter-spacing:0;margin-left:auto;margin-right:8px}
+.ideaBtn:hover{color:var(--text);border-color:var(--pink)}
+#sharedTitle.flash{animation:flash .6s ease}
+@keyframes flash{30%{border-color:var(--pink);box-shadow:0 0 0 1px var(--pink),0 0 18px rgba(var(--pink-rgb),.35)}}
+.notif .live.off{color:var(--faint)} .notif .live.off i{background:var(--faint);box-shadow:none}
+.notif .live.sched{color:var(--warn)} .notif .live.sched i{background:var(--warn);box-shadow:0 0 5px var(--warn)}
+.prevhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.prevhead h2{font:800 .9em var(--display);letter-spacing:.1em}
+.prevhead h2 b{color:var(--pink)}
+.prevhead span{font-size:.74em;color:var(--muted)}
+.prevgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:10px}
+@media (max-width:1100px){.prevgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.prevgrid{grid-template-columns:1fr}}
+.notif{background:linear-gradient(180deg,rgba(var(--panel-rgb),.95),rgba(var(--bg-rgb),.95));border:1px solid var(--line);border-radius:16px;
+  padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.notif .nav{width:44px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:50%;flex:none;background:var(--bg2)}
+.notif .nbody{flex:1;min-width:0}
+.notif .ntop{display:flex;align-items:center;gap:8px;margin-bottom:4px;flex-wrap:wrap}
+.notif .plattag{font:800 .62em var(--display);letter-spacing:.07em;padding:2px 6px;border:1px solid;border-radius:5px}
+.notif.tw .plattag{color:var(--tw);border-color:rgba(169,112,255,.6)}
+.notif.kk .plattag{color:var(--kick);border-color:rgba(83,252,24,.5)}
+.notif.yt .plattag{color:#ff7070;border-color:rgba(255,61,61,.55)}
+.notif .live em{font-style:normal}
+.notif .live{font:700 .6em var(--display);letter-spacing:.06em;color:#ff9db0;display:inline-flex;align-items:center;gap:4px}
+.notif .live i{width:5px;height:5px;border-radius:50%;background:var(--err);box-shadow:0 0 5px var(--err)}
+.notif .chname{font-weight:700}
+.notif .ntitle{font-size:.95em;line-height:1.35;word-break:break-word;margin-bottom:3px;min-height:1.3em}
+.notif .ncat{font-size:.78em;color:var(--muted)}
+.notif .ntags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.notif .ntags span{font-size:.66em;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+
+/* ---------- Ajustes ---------- */
+dialog{margin:auto;width:min(580px,94vw);max-height:92dvh;overflow:auto;scrollbar-width:none;background:var(--panel);color:var(--text);
+  border:1px solid var(--purple);border-radius:16px;padding:0;box-shadow:0 0 24px rgba(var(--purple-rgb),.3)}
+dialog::backdrop{background:rgba(var(--bg-rgb),.85)}
+dialog::-webkit-scrollbar{display:none}
+.dlg-h{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
+.dlg-h h2{font:800 .95em var(--display);letter-spacing:.12em}
+.dlg-h h2 b{color:var(--pink)}
+.dlg-tabs{display:flex;gap:6px;padding:10px 18px 0;flex-wrap:wrap;position:sticky;top:0;background:var(--panel);z-index:2}
+.dlg-tabs button{cursor:pointer;flex:1;min-width:80px;background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:9px;
+  padding:7px 10px;font:700 .72em var(--display);letter-spacing:.08em;transition:.15s}
+.dlg-tabs button:hover{color:var(--text)}
+.dlg-tabs button.on{color:#fff;border-color:var(--pink);background:rgba(var(--pink-rgb),.14);box-shadow:var(--glow)}
+.dlg-tabs button[data-tab=twitch].on{border-color:var(--tw);background:rgba(169,112,255,.18);box-shadow:0 0 12px rgba(169,112,255,.35)}
+.dlg-tabs button[data-tab=kick].on{border-color:var(--kick);background:rgba(83,252,24,.1);box-shadow:0 0 12px rgba(83,252,24,.25)}
+.dlg-tabs button[data-tab=youtube].on{border-color:var(--yt);background:rgba(255,61,61,.14);box-shadow:0 0 12px rgba(255,61,61,.3)}
+.dlg-b{padding:14px 18px 6px;display:grid;gap:18px}
+.dlg-b fieldset[data-tab]:not(.tab-on){display:none}
+fieldset{border:1px solid var(--line);border-radius:12px;padding:12px 14px 14px;display:grid;gap:9px;min-width:0}
+fieldset>*,label>*{min-width:0;max-width:100%}
+legend{padding:0 8px;font:700 .8em var(--display);letter-spacing:.1em}
+legend.tw{color:var(--tw)} legend.kk{color:var(--kick)} legend.yt{color:#ff7070}
+label{display:grid;gap:4px;font-size:.78em;color:var(--muted)}
+.btns{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn{cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:.62em 1.05em;border-radius:9px;font:600 .82em var(--font);transition:.15s}
+.btn:hover{border-color:var(--purple)}
+.btn.pri{border-color:var(--pink);color:#fff;background:linear-gradient(135deg,rgba(var(--pink-rgb),.35),rgba(var(--purple-rgb),.3));box-shadow:var(--glow)}
+.btn.danger:hover{border-color:var(--err);color:#ff9db0}
+.hint{font-size:.74em;color:var(--muted);line-height:1.5}
+.hint code{background:var(--bg2);padding:1px 5px;border-radius:4px;color:var(--pink-soft)}
+.acct{font-size:.8em;color:var(--ok)}
+.dlg-f{display:flex;justify-content:flex-end;gap:8px;padding:12px 18px 16px}
+details summary{cursor:pointer;color:var(--muted);font-size:.78em}
+details.adv{border:1px dashed var(--line);border-radius:10px;padding:8px 10px}
+details.adv[open]{background:rgba(0,0,0,.15)}
+.rhead{display:flex;justify-content:space-between;align-items:baseline}
+.rhead b{color:var(--pink-soft);font-weight:600}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:6px;background:var(--line);outline:none;cursor:pointer;padding:0;border:0}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--pink);border:0;box-shadow:0 0 8px rgba(var(--pink-rgb),.7)}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--pink);border:0}
+.switch{display:flex;align-items:center;gap:10px;font-size:.9em;color:var(--text);cursor:pointer;position:relative}
+.switch input{position:absolute;opacity:0;pointer-events:none}
+.switch i{width:38px;height:22px;border-radius:999px;background:var(--line);position:relative;transition:.15s;flex:none}
+.switch i::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--muted);transition:.15s}
+.switch input:checked+i{background:rgba(var(--pink-rgb),.35)}
+.switch input:checked+i::after{left:19px;background:var(--pink);box-shadow:0 0 8px rgba(var(--pink-rgb),.7)}
+.dlgnote{display:none;font-size:.76em;line-height:1.45;padding:7px 10px;border-radius:8px}
+.dlgnote.show{display:block}
+.dlgnote.err{color:#ff9db0;background:rgba(255,77,109,.09);border:1px solid rgba(255,77,109,.35)}
+.dlgnote.ok{color:var(--ok);background:rgba(93,255,177,.07);border:1px solid rgba(93,255,177,.3)}
+.dlgnote.info{color:var(--muted);background:rgba(var(--purple-rgb),.08);border:1px solid var(--line)}
+.redir{display:flex;gap:8px;align-items:center}
+.redir code{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:.8em;color:var(--pink-soft)}
+.srv{display:flex;align-items:center;gap:9px;font-size:.84em;padding:9px 11px;border-radius:10px;background:var(--bg2);border:1px solid var(--line)}
+.srv[data-s=ok]{border-color:rgba(93,255,177,.35)}
+.srv[data-s=error]{border-color:rgba(255,200,87,.4)}
+.themepick{display:grid;gap:6px;font-size:.78em;color:var(--muted)}
+.themes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.themes button{cursor:pointer;display:grid;gap:7px;justify-items:start;padding:9px 10px;border-radius:11px;
+  background:var(--tb);border:1px solid rgba(255,255,255,.08);color:#eee;font:600 .95em var(--font);text-align:left;transition:.15s}
+.themes button:hover{border-color:rgba(255,255,255,.25);transform:translateY(-1px)}
+.themes button.on{border-color:var(--ta);box-shadow:0 0 0 1px var(--ta),0 0 14px color-mix(in srgb,var(--ta) 45%,transparent)}
+.themes button i{display:flex;gap:3px}
+.themes button i b{width:13px;height:13px;border-radius:50%;box-shadow:0 0 0 1px rgba(0,0,0,.25)}
+
+/* ---------- Aviso flotante ---------- */
+#toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(20px);opacity:0;pointer-events:none;
+  background:var(--panel2);border:1px solid var(--ok);color:var(--ok);padding:10px 18px;font:700 .8em var(--display);letter-spacing:.08em;
+  box-shadow:0 0 18px rgba(93,255,177,.3);transition:.25s;z-index:9;border-radius:12px}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+#toast.err{border-color:var(--err);color:#ff9db0;box-shadow:0 0 18px rgba(255,77,109,.3)}
+
+@media (max-width:520px){
+  header{padding:8px 10px}.brand small{display:none}
+  main{padding:12px}
+  .iconbtn .lbl{display:none}
+  .dlg-tabs{gap:4px;padding:10px 12px 0}.dlg-tabs button{min-width:0;padding:7px 4px;font-size:.62em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">
+      <img class="crest" src="data:image/webp;base64,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" alt="Emblema de TyraPanel" width="44" height="36">
+      <div><h1>TYRA<b>PANEL</b></h1><small>Título · Categoría · Etiquetas</small></div>
+    </div>
+    <div class="pills">
+      <button class="pill" id="pillTwitch" data-s="idle" title="Twitch"><i class="dot"></i></button>
+      <button class="pill" id="pillKick" data-s="idle" title="Kick"><i class="dot"></i></button>
+      <button class="pill" id="pillYoutube" data-s="idle" title="YouTube"><i class="dot"></i></button>
+    </div>
+    <button class="iconbtn" id="setBtn" title="Ajustes y cuentas">⚙ <span class="lbl">Ajustes</span></button>
+    <button class="iconbtn" id="hdrToggle" title="Ocultar barra superior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+  </header>
+
+  <button id="hdrPeek" title="Mostrar barra superior">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    TyraPanel
+  </button>
+
+  <main>
+    <div class="topbar">
+      <h2>INFO DE <b>STREAM</b></h2>
+      <button class="applyAll" id="applyAllBtn">APLICAR TODO</button>
+    </div>
+
+    <section class="card shared">
+      <div class="card-h">
+        <div class="who"><div class="plat"><b>TÍTULO Y ETIQUETAS</b><span>Se aplican igual en todas tus plataformas conectadas</span></div></div>
+      </div>
+      <div class="field">
+        <label><span>Título</span><button type="button" class="ideaBtn" id="ideaBtn" title="Ideas de título según la categoría y tus directos anteriores">💡 Ideas</button><span class="cnt" id="sharedCnt"><span id="sharedLen">0</span>/140</span></label>
+        <textarea id="sharedTitle" rows="2" maxlength="140" placeholder="Escribe el título de tu stream…"></textarea>
+      </div>
+      <div class="sugg" id="sharedSugg" hidden></div>
+      <div class="field">
+        <label>Etiquetas <span class="cnt"><span id="sharedTagN">0</span>/10</span></label>
+        <div class="tagbox" id="sharedTagBox">
+          <input type="text" id="sharedTagInput" placeholder="Escribe y pulsa Enter…" autocomplete="off">
+        </div>
+        <div class="taghint">Enter o coma para añadir · Backspace para borrar la última · En Twitch se quitan espacios y símbolos</div>
+      </div>
+      <div class="card-f">
+        <button class="applyBtn shared" id="sharedApply">APLICAR TÍTULO Y ETIQUETAS</button>
+        <div class="note" id="sharedNote"></div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card tw" data-plat="twitch">
+        <div class="card-h">
+          <div class="who">
+            <span class="avwrap" id="twAvWrap" data-i=""><img class="avatar" id="twAvatar" alt=""></span>
+            <div class="plat"><b>TWITCH</b><span id="twWho">Sin cuenta conectada</span></div>
+          </div>
+          <div class="badges"><span class="livebadge" id="twLive"><i></i>EN VIVO</span><span class="synced" id="twSynced"></span></div>
+        </div>
+        <div class="field">
+          <label>Categoría / Juego</label>
+          <div class="catwrap">
+            <input type="text" id="twCatSearch" placeholder="Buscar categoría…" autocomplete="off">
+            <div class="catdrop" id="twCatDrop" hidden></div>
+          </div>
+          <div class="catsel" id="twCatSel"><span class="catname">Ninguna categoría seleccionada</span></div>
+        </div>
+        <div class="sugg" id="twSugg" hidden></div>
+        <div class="card-f">
+          <span class="dirty-dot" id="twDirty"></span>
+          <button class="applyBtn" id="twApply">APLICAR EN TWITCH</button>
+          <button class="resetBtn" id="twReset">Restablecer</button>
+          <div class="note" id="twNote2"></div>
+        </div>
+      </section>
+
+      <section class="card kk" data-plat="kick">
+        <div class="card-h">
+          <div class="who">
+            <span class="avwrap" id="kkAvWrap" data-i=""><img class="avatar" id="kkAvatar" alt="" referrerpolicy="no-referrer"></span>
+            <div class="plat"><b>KICK</b><span id="kkWho">Sin cuenta conectada</span></div>
+          </div>
+          <div class="badges"><span class="livebadge" id="kkLive"><i></i>EN VIVO</span><span class="synced" id="kkSynced"></span></div>
+        </div>
+        <div class="field">
+          <label>Categoría</label>
+          <div class="catwrap">
+            <input type="text" id="kkCatSearch" placeholder="Buscar categoría…" autocomplete="off">
+            <div class="catdrop" id="kkCatDrop" hidden></div>
+          </div>
+          <div class="catsel" id="kkCatSel"><span class="catname">Ninguna categoría seleccionada</span></div>
+        </div>
+        <div class="sugg" id="kkSugg" hidden></div>
+        <div class="card-f">
+          <span class="dirty-dot" id="kkDirty"></span>
+          <button class="applyBtn" id="kkApply">APLICAR EN KICK</button>
+          <button class="resetBtn" id="kkReset">Restablecer</button>
+          <div class="note" id="kkNote2"></div>
+        </div>
+      </section>
+
+      <section class="card yt" data-plat="youtube">
+        <div class="card-h">
+          <div class="who">
+            <span class="avwrap" id="ytAvWrap" data-i=""><img class="avatar" id="ytAvatar" alt="" referrerpolicy="no-referrer"></span>
+            <div class="plat"><b>YOUTUBE</b><span id="ytWho">Sin cuenta conectada</span></div>
+          </div>
+          <div class="badges"><span class="livebadge" id="ytLive"><i></i>EN VIVO</span><span class="synced" id="ytSynced"></span></div>
+        </div>
+        <div class="field">
+          <label>Categoría</label>
+          <select id="ytCat"><option value="">Conecta YouTube para ver las categorías</option></select>
+        </div>
+        <div class="sugg" id="ytSugg" hidden></div>
+        <div class="subinfo" id="ytInfo">Conecta tu cuenta en ⚙ Ajustes → YouTube.</div>
+        <div class="card-f">
+          <span class="dirty-dot" id="ytDirty"></span>
+          <button class="applyBtn" id="ytApply">APLICAR EN YOUTUBE</button>
+          <button class="resetBtn" id="ytReset">Restablecer</button>
+          <div class="note" id="ytNote2"></div>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <div class="prevhead"><h2>VISTA PREVIA DE <b>TUS STREAMS</b></h2><span>Título, categoría y etiquetas tal como quedarán en cada plataforma</span></div>
+      <div class="prevgrid">
+        <div class="notif tw">
+          <img class="nav" id="twPrevAvatar" alt="">
+          <div class="nbody">
+            <div class="ntop"><span class="plattag">TWITCH</span><span class="live"><i></i><em>EN VIVO</em></span></div>
+            <div class="chname" id="twPrevName">Tu canal</div>
+            <div class="ntitle" id="twPrevTitle">Tu título aparecerá aquí…</div>
+            <div class="ncat" id="twPrevCat">Sin categoría</div>
+            <div class="ntags" id="twPrevTags"></div>
+          </div>
+        </div>
+        <div class="notif kk">
+          <img class="nav" id="kkPrevAvatar" alt="" referrerpolicy="no-referrer">
+          <div class="nbody">
+            <div class="ntop"><span class="plattag">KICK</span><span class="live"><i></i><em>EN VIVO</em></span></div>
+            <div class="chname" id="kkPrevName">Tu canal</div>
+            <div class="ntitle" id="kkPrevTitle">Tu título aparecerá aquí…</div>
+            <div class="ncat" id="kkPrevCat">Sin categoría</div>
+            <div class="ntags" id="kkPrevTags"></div>
+          </div>
+        </div>
+        <div class="notif yt">
+          <img class="nav" id="ytPrevAvatar" alt="" referrerpolicy="no-referrer">
+          <div class="nbody">
+            <div class="ntop"><span class="plattag">YOUTUBE</span><span class="live"><i></i><em>EN VIVO</em></span></div>
+            <div class="chname" id="ytPrevName">Tu canal</div>
+            <div class="ntitle" id="ytPrevTitle">Tu título aparecerá aquí…</div>
+            <div class="ncat" id="ytPrevCat">Sin categoría</div>
+            <div class="ntags" id="ytPrevTags"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="toast"></div>
+
+<dialog id="dlg">
+  <div class="dlg-h"><h2>AJUSTES · <b>CUENTAS</b></h2><button class="iconbtn" id="dlgClose" aria-label="Cerrar">✕</button></div>
+  <div class="dlg-tabs" id="dlgTabs">
+    <button type="button" data-tab="general" class="on">GENERAL</button>
+    <button type="button" data-tab="twitch">TWITCH</button>
+    <button type="button" data-tab="kick">KICK</button>
+    <button type="button" data-tab="youtube">YOUTUBE</button>
+  </div>
+  <div class="dlg-b">
+    <fieldset data-tab="general">
+      <legend>EMPEZAR</legend>
+      <div class="srv" id="srvStatus" data-s="idle"><i class="dot"></i><span>Comprobando el servidor…</span></div>
+      <div class="hint">Escribe tu canal en cada pestaña y pulsa <b>Conectar</b>. El panel carga el título, la categoría y las etiquetas actuales de cada plataforma.</div>
+    </fieldset>
+
+    <fieldset data-tab="general">
+      <legend>APARIENCIA Y SONIDO</legend>
+      <div class="themepick">
+        <span>Tema de color</span>
+        <div class="themes" id="themePick">
+          <button type="button" data-t="" style="--tb:#0f0a20;--ta:#ff1fd6"><i><b style="background:#ff1fd6"></b><b style="background:#8b5cf6"></b><b style="background:#22e6ea"></b></i>Neón</button>
+          <button type="button" data-t="midnight" style="--tb:#0b1222;--ta:#38bdf8"><i><b style="background:#38bdf8"></b><b style="background:#4f7dff"></b><b style="background:#818cf8"></b></i>Medianoche</button>
+          <button type="button" data-t="sakura" style="--tb:#1c0f18;--ta:#ff8fbf"><i><b style="background:#ff8fbf"></b><b style="background:#d36fae"></b><b style="background:#ffb9a1"></b></i>Sakura</button>
+          <button type="button" data-t="matrix" style="--tb:#06110c;--ta:#3ee07a"><i><b style="background:#3ee07a"></b><b style="background:#16a34a"></b><b style="background:#a3e635"></b></i>Terminal</button>
+          <button type="button" data-t="ember" style="--tb:#1a0e07;--ta:#fbbf24"><i><b style="background:#fbbf24"></b><b style="background:#ea580c"></b><b style="background:#fb923c"></b></i>Brasa</button>
+          <button type="button" data-t="graphite" style="--tb:#111114;--ta:#f4f4f5"><i><b style="background:#f4f4f5"></b><b style="background:#a1a1aa"></b><b style="background:#52525b"></b></i>Grafito</button>
+        </div>
+      </div>
+      <label class="switch"><input type="checkbox" id="sndOn"><i></i><span>Sonido al aplicar cambios</span></label>
+      <label>
+        <div class="rhead"><span>Volumen</span><b id="volVal">40%</b></div>
+        <input type="range" id="volRange" min="0" max="100" step="5">
+      </label>
+      <div class="btns"><button class="btn" id="sndTest" type="button">▶ Probar sonido</button></div>
+    </fieldset>
+
+    <fieldset data-tab="general">
+      <legend>IDEAS DE TÍTULO</legend>
+      <label>Tus títulos anteriores (uno por línea)
+        <textarea id="pastTitles" rows="5" placeholder="Pega aquí títulos de directos que te gustaron, tal cual los escribiste…" spellcheck="false" style="resize:vertical"></textarea>
+      </label>
+      <div class="hint" id="pastInfo"></div>
+      <div class="btns"><button class="btn danger" id="pastClear" type="button">Olvidar todo lo aprendido</button></div>
+    </fieldset>
+
+    <fieldset data-tab="general">
+      <legend>SERVIDOR</legend>
+      <label>Servidor de TyraChat<input type="text" id="relayUrl" placeholder="https://tyrachat-relay.tu-usuario.workers.dev" autocomplete="off" spellcheck="false"></label>
+      <div class="hint">Es el mismo relay que usa TyraChat. Hace el inicio de sesión con un clic y renueva las sesiones solo.</div>
+      <details class="adv">
+        <summary>Avanzado: URL de redirección para tus propias apps</summary>
+        <div class="redir" style="margin-top:8px"><code id="redirUrl"></code><button class="btn" id="copyRedir" type="button">Copiar</button></div>
+        <div class="hint">Solo hace falta si usas tus propias apps (modo avanzado de cada plataforma).</div>
+      </details>
+    </fieldset>
+
+    <fieldset data-tab="twitch">
+      <legend class="tw">TWITCH</legend>
+      <label>Canal<input type="text" id="twChannel" placeholder="tu canal de Twitch" autocomplete="off" spellcheck="false"></label>
+      <div class="acct" id="twAcct"></div>
+      <div class="dlgnote" id="twNote"></div>
+      <div class="btns">
+        <button class="btn pri" id="twConnect" type="button">Conectar con Twitch</button>
+        <button class="btn danger" id="twLogout" type="button">Desconectar</button>
+      </div>
+      <div class="hint">Conecta la cuenta dueña del canal. El panel pide el permiso para cambiar el título y la categoría (distinto al de TyraChat).</div>
+      <details class="adv" id="twAdv">
+        <summary>Avanzado: usar tu propia app de Twitch</summary>
+        <label style="margin-top:8px">Client ID de tu app de Twitch<input type="password" id="twClient" placeholder="Client ID de dev.twitch.tv/console" autocomplete="new-password" spellcheck="false"></label>
+        <label style="margin-top:8px">O pega un token OAuth (permiso channel:manage:broadcast)<input type="password" id="twToken" placeholder="oauth:xxxxxxxx" autocomplete="new-password" spellcheck="false"></label>
+        <div class="btns" style="margin-top:8px"><button class="btn" id="twTokenSave" type="button">Validar token</button></div>
+      </details>
+    </fieldset>
+
+    <fieldset data-tab="kick">
+      <legend class="kk">KICK</legend>
+      <label>Canal<input type="text" id="kkChannel" placeholder="tu canal de Kick" autocomplete="off" spellcheck="false"></label>
+      <div class="acct" id="kkAcct"></div>
+      <div class="dlgnote" id="kkNote"></div>
+      <div class="btns">
+        <button class="btn pri" id="kkConnect" type="button">Conectar con Kick</button>
+        <button class="btn danger" id="kkLogout" type="button">Desconectar</button>
+      </div>
+      <div class="hint">Conecta la cuenta dueña del canal para poder cambiar el título, la categoría y las etiquetas.</div>
+      <details class="adv" id="kkAdv">
+        <summary>Avanzado: usar tu propia app de Kick</summary>
+        <label style="margin-top:8px">Client ID de tu app de Kick<input type="password" id="kkClient" placeholder="kick.com → Ajustes → Desarrollador" autocomplete="new-password" spellcheck="false"></label>
+        <label style="margin-top:8px">Client Secret<input type="password" id="kkSecret" placeholder="Client Secret" autocomplete="new-password" spellcheck="false"></label>
+        <label style="margin-top:8px">O pega un access token (permisos channel:read channel:write)<input type="password" id="kkToken" placeholder="Bearer token" autocomplete="new-password" spellcheck="false"></label>
+        <div class="btns" style="margin-top:8px"><button class="btn" id="kkTokenSave" type="button">Guardar token</button></div>
+      </details>
+    </fieldset>
+
+    <fieldset data-tab="youtube">
+      <legend class="yt">YOUTUBE</legend>
+      <div class="acct" id="ytAcct"></div>
+      <div class="dlgnote" id="ytNote"></div>
+      <div class="btns">
+        <button class="btn pri" id="ytConnect" type="button">Conectar con YouTube</button>
+        <button class="btn danger" id="ytLogout" type="button">Desconectar</button>
+      </div>
+      <div class="hint">Conecta la cuenta dueña del canal. El panel trabaja sobre tu directo <b>en vivo</b> o, si no hay, sobre el próximo <b>programado</b> en YouTube Studio. YouTube admite títulos de hasta 100 caracteres.</div>
+      <details class="adv" id="ytAdv">
+        <summary>Avanzado: usar tu propio cliente de Google</summary>
+        <label style="margin-top:8px">Client ID de OAuth<input type="password" id="ytClient" placeholder="xxxxxxxx.apps.googleusercontent.com" autocomplete="new-password" spellcheck="false"></label>
+        <div class="hint">Con tu propio Client ID la sesión dura 1 hora. Registra esta página como URI de redireccionamiento.</div>
+      </details>
+    </fieldset>
+  </div>
+  <div class="dlg-f">
+    <button class="btn" id="dlgCancel" type="button">Cancelar</button>
+    <button class="btn pri" id="dlgSave" type="button">Guardar</button>
+  </div>
+</dialog>
+
+<script>
+(() => {
+'use strict';
+const $ = s => document.querySelector(s);
+const DEF = {
+  relay:'https://tyrachat-relay.tyravtbusiness.workers.dev', theme:'',
+  twChannel:'', twClient:'', twToken:'', twLogin:'', twUserId:'', twScopes:'', twTokenClient:'', twRefresh:'', twExpires:0, twVia:'',
+  kkChannel:'', kkClient:'', kkSecret:'', kkToken:'', kkRefresh:'', kkExpires:0, kkLogin:'', kkBroadcaster:'', kkVia:'', kkLastCat:null, kkLastTags:[],
+  twAvatar:'', kkAvatar:'', ytClient:'', ytToken:'', ytRefresh:'', ytExpires:0, ytVia:'', ytLogin:'', ytChannelId:'', ytAvatar:'',
+  soundOn:true, volume:40
+};
+let cfg = { ...DEF };
+try { Object.assign(cfg, JSON.parse(localStorage.getItem('tyrapanel.cfg') || '{}')); } catch {}
+if(!cfg.relay) cfg.relay = DEF.relay;
+const save = () => { try { localStorage.setItem('tyrapanel.cfg', JSON.stringify(cfg)); } catch {} };
+const redirectUri = () => location.origin + location.pathname;
+const canRedirect = () => location.protocol === 'https:' || location.hostname === 'localhost';
+const rand = () => Array.from(crypto.getRandomValues(new Uint8Array(16)), b => b.toString(16).padStart(2,'0')).join('');
+const b64url = buf => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+const PNAME = { twitch:'Twitch', kick:'Kick', youtube:'YouTube' };
+const LIMIT = { twitch:140, kick:140, youtube:100 };
+
+/* ---------- Tema ---------- */
+function applyTheme(t){
+  if(t) document.documentElement.dataset.theme = t; else document.documentElement.removeAttribute('data-theme');
+}
+function paintThemePick(t){ $('#themePick').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.t === t)); }
+let themeDraft = cfg.theme;
+$('#themePick').addEventListener('click', e => {
+  const b = e.target.closest('button[data-t]'); if(!b) return;
+  themeDraft = b.dataset.t; applyTheme(themeDraft); paintThemePick(themeDraft);
+});
+applyTheme(cfg.theme);
+
+/* ---------- Sonido: pad suave con tres notas y eco ---------- */
+let actx = null;
+function ensureAudio(){
+  try{
+    if(!actx){ const AC = window.AudioContext || window.webkitAudioContext; if(!AC) return null; actx = new AC(); }
+    if(actx.state === 'suspended') actx.resume();
+  }catch{ return null; }
+  return actx;
+}
+function confirmChime(preview){
+  const isPreview = typeof preview === 'number';
+  if(!isPreview && !cfg.soundOn) return;
+  const vol = (isPreview ? preview : Number(cfg.volume)) / 100;
+  if(!(vol > 0)) return;
+  const ctx = ensureAudio(); if(!ctx || ctx.state !== 'running') return;
+  const t = ctx.currentTime;
+  const out = ctx.createGain(); out.connect(ctx.destination);
+  const dly = ctx.createDelay(1); dly.delayTime.value = .21;
+  const fb = ctx.createGain(); fb.gain.value = .32;
+  const dlp = ctx.createBiquadFilter(); dlp.type = 'lowpass'; dlp.frequency.value = 2200;
+  const wet = ctx.createGain(); wet.gain.value = .42;
+  dly.connect(dlp); dlp.connect(fb); fb.connect(dly); dlp.connect(wet); wet.connect(out);
+  const padF = ctx.createBiquadFilter(); padF.type = 'lowpass'; padF.Q.value = 1.2;
+  padF.frequency.setValueAtTime(380, t);
+  padF.frequency.exponentialRampToValueAtTime(1500, t + .45);
+  padF.frequency.exponentialRampToValueAtTime(520, t + 1.2);
+  const padG = ctx.createGain();
+  padG.gain.setValueAtTime(.0001, t);
+  padG.gain.linearRampToValueAtTime(Math.max(.0002, vol * .075), t + .22);
+  padG.gain.exponentialRampToValueAtTime(.0001, t + 1.25);
+  padF.connect(padG); padG.connect(out); padG.connect(dly);
+  [146.83, 220, 329.63].forEach((f, i) => {
+    [-5, 5].forEach(det => {
+      const o = ctx.createOscillator(); o.type = i === 2 ? 'sine' : 'sawtooth';
+      o.frequency.setValueAtTime(f, t); o.detune.value = det;
+      const og = ctx.createGain(); og.gain.value = i === 2 ? .7 : .35;
+      o.connect(og); og.connect(padF); o.start(t); o.stop(t + 1.3);
+    });
+  });
+  [440, 659.25, 880].forEach((f, i) => {
+    const st = t + .05 + i * .11;
+    const o = ctx.createOscillator(); o.type = 'sine';
+    o.frequency.setValueAtTime(f * .97, st);
+    o.frequency.exponentialRampToValueAtTime(f, st + .05);
+    const g = ctx.createGain();
+    g.gain.setValueAtTime(.0001, st);
+    g.gain.exponentialRampToValueAtTime(Math.max(.0002, vol * (.085 - i * .01)), st + .02);
+    g.gain.exponentialRampToValueAtTime(.0001, st + .3);
+    o.connect(g); g.connect(out); g.connect(dly); o.start(st); o.stop(st + .32);
+  });
+  setTimeout(() => { try{ out.disconnect(); dly.disconnect(); dlp.disconnect(); fb.disconnect(); wet.disconnect(); }catch{} }, 2600);
+}
+
+/* ---------- Avisos ---------- */
+let toastTimer = null;
+function toast(msg, kind){
+  const el = $('#toast'); el.textContent = msg; el.className = kind === 'err' ? 'err' : '';
+  requestAnimationFrame(() => el.classList.add('show'));
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('show'), 3200);
+}
+function note(id, msg, kind){ const el = $('#'+id); if(!el) return; el.className = 'dlgnote' + (msg ? ' show' : '') + (kind ? ' '+kind : ''); el.textContent = msg || ''; }
+function note2(id, msg, kind){ const el = $('#'+id); if(!el) return; el.className = 'note' + (kind ? ' '+kind : ''); el.textContent = msg || ''; }
+const PILL = { twitch:'#pillTwitch', kick:'#pillKick', youtube:'#pillYoutube' };
+function setPillStatus(plat, s, title){ const el = $(PILL[plat]); el.dataset.s = s; el.title = PNAME[plat] + (title ? ' · '+title : ''); }
+// foto de perfil: se guarda para que aparezca al instante y, si la imagen falla, queda la inicial
+function setAvatar(k, url){
+  const key = k+'Avatar';
+  if(url && cfg[key] !== url){ cfg[key] = url; save(); }
+  url = url === null ? '' : (url || cfg[key] || '');
+  [$('#'+k+'Avatar'), $('#'+k+'PrevAvatar')].forEach(img => {
+    if(!img) return;
+    if(url){ img.onerror = () => { img.removeAttribute('src'); if(cfg[key] === url){ cfg[key] = ''; save(); } }; if(img.getAttribute('src') !== url) img.src = url; }
+    else img.removeAttribute('src');
+  });
+}
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* ---------- Barra superior: ocultar / mostrar ---------- */
+(() => {
+  const appEl = $('.app'), toggleBtn = $('#hdrToggle'), peekBtn = $('#hdrPeek');
+  const KEY = 'tyrapanel.hdrHidden';
+  function apply(hidden){
+    appEl.classList.toggle('hdr-collapsed', hidden);
+    const label = hidden ? 'Mostrar barra superior' : 'Ocultar barra superior';
+    toggleBtn.title = label; peekBtn.title = label;
+    try{ localStorage.setItem(KEY, hidden ? '1' : '0'); }catch{}
+  }
+  toggleBtn.addEventListener('click', () => apply(!appEl.classList.contains('hdr-collapsed')));
+  peekBtn.addEventListener('click', () => apply(false));
+  let startHidden = false;
+  try{ startHidden = localStorage.getItem(KEY) === '1'; }catch{}
+  apply(startHidden);
+})();
+
+/* ---------- Servidor (relay): inicio de sesión con un clic y renovación ---------- */
+let server = null;
+const srvBase = () => {
+  let b = String(cfg.relay || '').trim().replace(/\/+$/,'').replace(/\/(webhook|ws|config)$/,'');
+  if(b && !/^[a-z]+:\/\//i.test(b)) b = 'https://'+b;
+  return b;
+};
+const srvHas = p => !!(server && server.oauth && server.oauth[p]);
+async function loadServer(){
+  server = null;
+  const base = srvBase();
+  if(base){
+    const ctl = new AbortController(), to = setTimeout(() => ctl.abort(), 6000);
+    try{
+      const r = await fetch(base+'/config', { signal: ctl.signal, cache:'no-store' });
+      if(r.ok){ const j = await r.json().catch(() => null); if(j && j.ok) server = j; }
+    }catch{}
+    finally{ clearTimeout(to); }
+  }
+  paintServer();
+}
+function paintServer(){
+  const el = $('#srvStatus'), sp = el.querySelector('span');
+  if(server){
+    const list = ['twitch','kick','youtube'].filter(srvHas).map(p => PNAME[p]);
+    el.dataset.s = 'ok';
+    sp.textContent = list.length ? '✓ Servidor listo · conexión con un clic en '+list.join(', ') : '✓ Servidor listo (sin apps configuradas: usa el modo avanzado)';
+  } else {
+    el.dataset.s = 'error';
+    sp.textContent = srvBase() ? 'El servidor no responde: usa el modo avanzado de cada plataforma.' : 'Falta el servidor: pon la URL de tu relay en esta pestaña.';
+  }
+  // si el relay ya conecta esa plataforma, el modo avanzado ni se muestra
+  [['twitch','#twAdv'],['kick','#kkAdv'],['youtube','#ytAdv']].forEach(([p, id]) => {
+    const d = $(id); d.hidden = srvHas(p); if(!srvHas(p)) d.open = true;
+  });
+}
+function srvLogin(p, noteId){
+  if(!canRedirect()){ note(noteId, 'Abre esta página desde https:// o desde http://localhost.'); return; }
+  note(noteId, 'Redirigiendo a '+PNAME[p]+'…', 'info');
+  const nonce = rand(); sessionStorage.setItem('tp.srv.nonce', nonce);
+  location.href = srvBase()+'/auth/'+p+'/start?'+new URLSearchParams({ return: redirectUri(), nonce, profile:'panel' });
+}
+async function srvRefresh(p, refresh){
+  const r = await fetch(srvBase()+'/auth/'+p+'/refresh', { method:'POST', headers:{ 'Content-Type':'application/json' }, body: JSON.stringify({ refresh_token: refresh }) });
+  const j = await r.json().catch(() => ({}));
+  if(r.ok && j.access_token) return j;
+  if(r.status === 401) return { invalid:true };
+  return null;
+}
+
+/* ---------- Estado por plataforma ---------- */
+const blank = () => ({ title:'', catId:'', catName:'', catImg:'', catSource:'', tags:[], live:false, saved:{ title:'', catId:'', catName:'', tags:[] } });
+const state = { twitch: blank(), kick: blank(), youtube: blank() };
+const PREFIX = { twitch:'tw', kick:'kk', youtube:'yt' };
+const connected = { twitch: () => !!(cfg.twToken && cfg.twUserId), kick: () => !!cfg.kkToken, youtube: () => !!cfg.ytToken };
+function snapshot(p){ const s = state[p]; s.saved = { title: s.title, catId: s.catId, catName: s.catName, tags: [...s.tags] }; }
+function isDirty(p){
+  const s = state[p], sv = s.saved;
+  return s.title !== sv.title || s.catId !== sv.catId || JSON.stringify(s.tags) !== JSON.stringify(sv.tags);
+}
+function refreshDirty(p){ $('#'+PREFIX[p]+'Dirty').parentElement.classList.toggle('dirty', connected[p]() && isDirty(p)); }
+const refreshAllDirty = () => ['twitch','kick','youtube'].forEach(refreshDirty);
+
+/* ---------- Etiquetas compartidas ---------- */
+let sharedTags = [];
+const sharedTagUI = (() => {
+  const box = $('#sharedTagBox'), input = $('#sharedTagInput'), countEl = $('#sharedTagN'), max = 10;
+  function mirror(){ ['twitch','kick','youtube'].forEach(p => { state[p].tags = [...sharedTags]; }); syncPreview(); refreshAllDirty(); }
+  function render(){
+    box.querySelectorAll('.tag-chip').forEach(n => n.remove());
+    sharedTags.forEach((tg, i) => {
+      const chip = document.createElement('span'); chip.className = 'tag-chip';
+      const txt = document.createElement('span'); txt.textContent = tg;
+      const btn = document.createElement('button'); btn.type = 'button'; btn.textContent = '✕'; btn.title = 'Quitar';
+      btn.onclick = () => { sharedTags.splice(i, 1); render(); mirror(); };
+      chip.append(txt, btn); box.insertBefore(chip, input);
+    });
+    countEl.textContent = sharedTags.length;
+  }
+  function addTag(raw){
+    const v = raw.trim().replace(/,/g,''); if(!v) return;
+    if(sharedTags.length >= max) return;
+    if(sharedTags.some(t => t.toLowerCase() === v.toLowerCase())) return;
+    sharedTags.push(v.slice(0, 25)); render(); mirror();
+  }
+  input.addEventListener('keydown', e => {
+    if(e.key === 'Enter' || e.key === ','){ e.preventDefault(); addTag(input.value); input.value = ''; }
+    else if(e.key === 'Backspace' && !input.value && sharedTags.length){ sharedTags.pop(); render(); mirror(); }
+  });
+  input.addEventListener('blur', () => { if(input.value.trim()){ addTag(input.value); input.value = ''; } });
+  return { setAll(arr){ sharedTags = Array.isArray(arr) ? arr.slice(0, max) : []; render(); mirror(); } };
+})();
+// Twitch solo acepta letras y números en las etiquetas
+const twTag = t => String(t).normalize('NFC').replace(/[^\p{L}\p{N}]/gu, '').slice(0, 25);
+
+/* ---------- Título compartido ---------- */
+const sharedTitleEl = $('#sharedTitle');
+function setSharedTitle(v, fromInput){
+  ['twitch','kick','youtube'].forEach(p => { state[p].title = v; });
+  if(!fromInput) sharedTitleEl.value = v;
+  fitTitle();
+  $('#sharedLen').textContent = v.length;
+  const over = v.trim().length > LIMIT.youtube && connected.youtube();
+  $('#sharedCnt').classList.toggle('over', over);
+  $('#sharedCnt').title = over ? 'YouTube admite hasta 100 caracteres' : '';
+  syncPreview(); refreshAllDirty();
+}
+sharedTitleEl.addEventListener('input', () => setSharedTitle(sharedTitleEl.value, true));
+// el cuadro del título crece con el texto en vez de mostrar barra de desplazamiento
+function fitTitle(){ sharedTitleEl.style.height = 'auto'; sharedTitleEl.style.height = sharedTitleEl.scrollHeight + 2 + 'px'; }
+// Enter no mete saltos de línea: ninguna plataforma los admite en el título
+sharedTitleEl.addEventListener('keydown', e => { if(e.key === 'Enter') e.preventDefault(); });
+sharedTitleEl.addEventListener('paste', () => setTimeout(() => { const v = sharedTitleEl.value.replace(/\s*\n+\s*/g, ' '); if(v !== sharedTitleEl.value) setSharedTitle(v); }, 0));
+window.addEventListener('resize', fitTitle);
+
+/* ---------- Vista previa ---------- */
+function syncPreview(){
+  const names = { twitch: cfg.twLogin || cfg.twChannel, kick: cfg.kkLogin || cfg.kkChannel, youtube: cfg.ytLogin };
+  ['twitch','kick','youtube'].forEach(p => {
+    const k = PREFIX[p], s = state[p];
+    $('#'+k+'PrevName').textContent = names[p] || 'Tu canal';
+    let title = s.title.trim();
+    if(p === 'youtube' && connected.youtube() && title.length > LIMIT.youtube) title = title.slice(0, LIMIT.youtube) + '…';
+    $('#'+k+'PrevTitle').textContent = title || 'Tu título aparecerá aquí…';
+    $('#'+k+'PrevCat').textContent = s.catName || 'Sin categoría';
+    const tags = p === 'twitch' ? s.tags.map(twTag).filter(Boolean) : s.tags;
+    $('#'+k+'PrevTags').innerHTML = tags.map(t => `<span>${esc(t)}</span>`).join('');
+    const lv = $('.notif.'+k+' .live'), sched = p === 'youtube' && !s.live && yts.kind === 'upcoming' && !!yts.videoId;
+    lv.className = 'live' + (s.live ? '' : sched ? ' sched' : ' off');
+    lv.querySelector('em').textContent = s.live ? 'EN VIVO' : sched ? 'PROGRAMADO' : 'FUERA DE DIRECTO';
+    lv.style.display = connected[p]() ? 'inline-flex' : 'none';
+  });
+}
+
+/* ---------- Selector de categoría (Twitch y Kick) ---------- */
+function catSelUpdate(plat){
+  const k = PREFIX[plat], sel = $('#'+k+'CatSel'), s = state[plat];
+  if(s.catId && !s.catName){ s.catId = ''; s.catImg = ''; }
+  if(s.catId){
+    sel.className = 'catsel has';
+    const src = s.catSource === 'last' ? '<small>la última que aplicaste desde aquí</small>' : s.catSource === 'recent' ? '<small>la más reciente de tu canal</small>' : '';
+    sel.innerHTML = (s.catImg ? `<img src="${esc(s.catImg)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : '') +
+      `<span class="catname">${esc(s.catName)}${src}</span><span class="clr" title="Quitar">✕</span>`;
+    sel.querySelector('.clr').onclick = () => { s.catId = ''; s.catName = ''; s.catImg = ''; s.catSource = ''; catSelUpdate(plat); syncPreview(); refreshDirty(plat); };
+  } else {
+    sel.className = 'catsel';
+    sel.innerHTML = '<span class="catname">Ninguna categoría seleccionada</span>';
+  }
+}
+function wireCatSearch(plat, searchFn){
+  const k = PREFIX[plat], input = $('#'+k+'CatSearch'), drop = $('#'+k+'CatDrop');
+  let timer = null, reqId = 0;
+  const hide = () => { drop.hidden = true; drop.innerHTML = ''; };
+  const msg = text => { drop.innerHTML = `<div class="catempty">${esc(text)}</div>`; drop.hidden = false; };
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    const q = input.value.trim();
+    if(!q){ reqId++; hide(); return; }
+    msg('Buscando…');
+    timer = setTimeout(async () => {
+      const my = ++reqId;
+      let results = [];
+      try{ results = await searchFn(q); }
+      catch(e){ if(my === reqId) msg((e && e.message) || 'No se pudo buscar.'); return; }
+      if(my !== reqId) return;
+      if(!results.length){ msg('Sin resultados'); return; }
+      drop.innerHTML = '';
+      results.slice(0, 20).forEach(r => {
+        const it = document.createElement('div'); it.className = 'catitem';
+        it.innerHTML = (r.img ? `<img src="${esc(r.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'">` : '') + `<span>${esc(r.name)}</span>`;
+        it.onclick = () => {
+          Object.assign(state[plat], { catId:r.id, catName:r.name, catImg:r.img || '', catSource:'' });
+          catSelUpdate(plat); syncPreview(); refreshDirty(plat); hide(); input.value = '';
+          showIdeas(PREFIX[plat], r.name);
+        };
+        drop.appendChild(it);
+      });
+      drop.hidden = false;
+    }, 280);
+  });
+  drop.addEventListener('mousedown', e => e.preventDefault());
+  input.addEventListener('blur', () => setTimeout(() => { reqId++; hide(); }, 180));
+}
+
+/* =========================================================
+   TWITCH
+   ========================================================= */
+async function twValidate(token){
+  const r = await fetch('https://id.twitch.tv/oauth2/validate', { headers:{ Authorization:'OAuth '+token }});
+  if(!r.ok) throw new Error('Token no válido');
+  return r.json();
+}
+function twStoreAuth(token, v){
+  cfg.twToken = token; cfg.twLogin = v.login; cfg.twUserId = v.user_id || '';
+  cfg.twScopes = (v.scopes || []).join(' '); cfg.twTokenClient = v.client_id || ''; save();
+}
+const twHeaders = () => ({ 'Client-Id': cfg.twTokenClient || cfg.twClient, Authorization:'Bearer '+cfg.twToken });
+let twRefreshing = null;
+function twRefreshToken(){
+  if(twRefreshing) return twRefreshing;
+  if(cfg.twVia !== 'server' || !cfg.twRefresh) return Promise.resolve(false);
+  twRefreshing = (async () => {
+    try{
+      const j = await srvRefresh('twitch', cfg.twRefresh);
+      if(j && j.access_token){
+        const v = await twValidate(j.access_token); twStoreAuth(j.access_token, v);
+        if(j.refresh_token) cfg.twRefresh = j.refresh_token;
+        cfg.twExpires = Date.now() + (Number(v.expires_in) || 14000) * 1000; save();
+        return true;
+      }
+      if(j && j.invalid){ cfg.twRefresh = ''; save(); }
+      return false;
+    }catch{ return false; }
+    finally{ twRefreshing = null; }
+  })();
+  return twRefreshing;
+}
+async function twFetch(url, opts){
+  opts = opts || {};
+  if(cfg.twRefresh && cfg.twExpires && Date.now() > cfg.twExpires - 300000) await twRefreshToken();
+  const go = () => fetch(url, { ...opts, headers:{ ...(opts.headers || {}), ...twHeaders() } });
+  let r = await go();
+  if(r.status === 401 && await twRefreshToken()) r = await go();
+  return r;
+}
+function twStartLogin(){
+  readForm();
+  if(srvHas('twitch')) return srvLogin('twitch', 'twNote');
+  if(!cfg.twClient){ note('twNote','Falta el Client ID de tu app de Twitch (en "Avanzado").'); return; }
+  if(!canRedirect()){ note('twNote','Abre esta página desde https:// o desde http://localhost.'); return; }
+  note('twNote','Redirigiendo a Twitch…','info');
+  const st = rand(); sessionStorage.setItem('tp.tw.state', st);
+  location.href = 'https://id.twitch.tv/oauth2/authorize?' + new URLSearchParams({
+    client_id: cfg.twClient, redirect_uri: redirectUri(), response_type:'token', scope:'channel:manage:broadcast', state: st, force_verify:'true' });
+}
+async function twLoadCurrent(){
+  if(!connected.twitch()){ setPillStatus('twitch','idle','sin conectar'); return; }
+  setPillStatus('twitch','connecting','cargando…');
+  try{
+    setAvatar('tw');
+    twFetch('https://api.twitch.tv/helix/users?id='+cfg.twUserId).then(r => r.json()).then(u => {
+      const me = u && u.data && u.data[0]; if(me && me.profile_image_url) setAvatar('tw', me.profile_image_url);
+    }).catch(() => {});
+    const r = await twFetch('https://api.twitch.tv/helix/channels?broadcaster_id='+cfg.twUserId);
+    if(r.status === 401) throw new Error('La sesión de Twitch caducó. Vuelve a conectar en ⚙ Ajustes.');
+    const j = await r.json();
+    const c = j && j.data && j.data[0];
+    const s = state.twitch;
+    if(c){
+      s.title = c.title || ''; s.catId = c.game_id || ''; s.catName = c.game_name || ''; s.catSource = '';
+      s.tags = Array.isArray(c.tags) ? c.tags.slice(0, 10) : [];
+      s.catImg = '';
+      if(s.catId){
+        try{
+          const g = await (await twFetch('https://api.twitch.tv/helix/games?id='+s.catId)).json();
+          const gg = g && g.data && g.data[0]; if(gg) s.catImg = (gg.box_art_url || '').replace('{width}','52').replace('{height}','72');
+        }catch{}
+      }
+      snapshot('twitch'); catSelUpdate('twitch');
+    }
+    try{
+      const st = await (await twFetch('https://api.twitch.tv/helix/streams?user_id='+cfg.twUserId)).json();
+      s.live = !!(st && st.data && st.data.length);
+    }catch{}
+    $('#twLive').classList.toggle('on', s.live);
+    setPillStatus('twitch','ok','conectado');
+    $('#twSynced').textContent = 'Sincronizado ' + new Date().toLocaleTimeString('es', { hour:'2-digit', minute:'2-digit' });
+  }catch(e){
+    setPillStatus('twitch','error', (e && e.message) || 'error al cargar');
+    note2('twNote2', 'Twitch: '+((e && e.message) || 'no se pudieron cargar los datos.'), 'err');
+  }
+}
+async function twSearchCategories(q){
+  if(!connected.twitch()) throw new Error('Conecta tu cuenta de Twitch en ⚙ Ajustes primero.');
+  const j = await (await twFetch('https://api.twitch.tv/helix/search/categories?query='+encodeURIComponent(q)+'&first=20')).json();
+  if(j.error) throw new Error('Twitch: '+(j.message || j.error));
+  return (j.data || []).map(g => ({ id:g.id, name:g.name, img:(g.box_art_url || '').replace('{width}','52').replace('{height}','72') }));
+}
+async function twApply(){
+  if(!connected.twitch()){ note2('twNote2','Conecta tu cuenta de Twitch en ⚙ Ajustes primero.','err'); return false; }
+  const s = state.twitch, btn = $('#twApply');
+  const body = { tags: [...new Set(s.tags.map(twTag).filter(Boolean))] };
+  if(s.title.trim()) body.title = s.title.trim().slice(0, LIMIT.twitch);
+  if(s.catId) body.game_id = s.catId;
+  if(!body.title && !s.catId && !body.tags.length){ note2('twNote2','No hay nada que aplicar todavía.','err'); return false; }
+  btn.disabled = true; note2('twNote2','Aplicando cambios…','info');
+  try{
+    const r = await twFetch('https://api.twitch.tv/helix/channels?broadcaster_id='+cfg.twUserId, {
+      method:'PATCH', headers:{ 'Content-Type':'application/json' }, body: JSON.stringify(body) });
+    if(r.status === 401) throw new Error('la sesión caducó, vuelve a conectar la cuenta en ⚙ Ajustes.');
+    if(!r.ok){ const j = await r.json().catch(() => ({})); throw new Error(j.message || ('error '+r.status)); }
+    snapshot('twitch'); refreshDirty('twitch');
+    note2('twNote2','Cambios aplicados en Twitch ✓','ok');
+    logTitle('twitch');
+    $('#twSynced').textContent = 'Aplicado ' + new Date().toLocaleTimeString('es', { hour:'2-digit', minute:'2-digit' });
+    return true;
+  }catch(e){ note2('twNote2', 'Twitch: '+e.message, 'err'); return false; }
+  finally{ btn.disabled = false; }
+}
+wireCatSearch('twitch', twSearchCategories);
+
+/* =========================================================
+   KICK
+   ========================================================= */
+const kkHeaders = () => ({ Authorization:'Bearer '+cfg.kkToken });
+function kkStoreTokens(j){
+  cfg.kkToken = j.access_token;
+  if(j.refresh_token) cfg.kkRefresh = j.refresh_token;
+  cfg.kkExpires = Date.now() + (Number(j.expires_in) || 7200) * 1000;
+  save();
+}
+function kkClearSession(reason){
+  cfg.kkToken = ''; cfg.kkRefresh = ''; cfg.kkExpires = 0; cfg.kkLogin = ''; save();
+  setPillStatus('kick','idle','sin conectar');
+  note('kkNote', reason || 'Tu sesión de Kick caducó. Vuelve a conectar la cuenta.', 'err');
+  note2('kkNote2', reason || 'Tu sesión de Kick caducó. Reconecta la cuenta en ⚙ Ajustes.', 'err');
+}
+let kkRefreshing = null;
+function kkRefreshToken(){
+  if(kkRefreshing) return kkRefreshing;           // el refresh token es de un solo uso
+  if(!cfg.kkRefresh) return Promise.resolve(false);
+  kkRefreshing = (async () => {
+    try{
+      let j = null, bad = false;
+      if(cfg.kkVia === 'server'){
+        j = await srvRefresh('kick', cfg.kkRefresh); bad = !!(j && j.invalid);
+      } else {
+        if(!cfg.kkClient || !cfg.kkSecret) return false;
+        const r = await fetch('https://id.kick.com/oauth/token', { method:'POST', headers:{ 'Content-Type':'application/x-www-form-urlencoded' },
+          body: new URLSearchParams({ grant_type:'refresh_token', refresh_token:cfg.kkRefresh, client_id:cfg.kkClient, client_secret:cfg.kkSecret }) });
+        j = await r.json().catch(() => ({})); bad = r.status === 400 || r.status === 401;
+      }
+      if(j && j.access_token){ kkStoreTokens(j); return true; }
+      if(bad) kkClearSession('Kick: la sesión caducó y no se pudo renovar sola. Vuelve a conectar la cuenta en ⚙ Ajustes.');
+      return false;
+    }catch{ return false; }
+    finally{ kkRefreshing = null; }
+  })();
+  return kkRefreshing;
+}
+async function kkEnsureFresh(){
+  if(cfg.kkToken && cfg.kkRefresh && cfg.kkExpires && Date.now() > cfg.kkExpires - 300000) await kkRefreshToken();
+}
+async function kkFetch(url, opts){
+  opts = opts || {};
+  await kkEnsureFresh();
+  const go = () => fetch(url, { ...opts, headers:{ ...(opts.headers || {}), ...kkHeaders() } });
+  let r = await go();
+  if(r.status === 401 && cfg.kkRefresh && await kkRefreshToken()) r = await go();
+  return r;
+}
+setInterval(() => { kkEnsureFresh(); }, 60000);
+// Kick responde "message":"OK" también cuando todo va bien: se mira el código HTTP
+async function kkGetJson(url){
+  let r;
+  try{ r = await kkFetch(url); }
+  catch{ throw new Error('No pude conectar con Kick (revisa tu conexión).'); }
+  let j = null; try{ j = await r.json(); }catch{}
+  if(r.status === 401){ const e = new Error('La sesión de Kick caducó. Vuelve a conectar la cuenta en ⚙ Ajustes.'); e.auth = true; throw e; }
+  if(!r.ok) throw new Error('Kick: ' + ((j && j.message) || ('error ' + r.status)));
+  return j;
+}
+async function kickStartLogin(){
+  readForm();
+  if(srvHas('kick')) return srvLogin('kick', 'kkNote');
+  if(!cfg.kkClient || !cfg.kkSecret){ note('kkNote','Faltan el Client ID y el Client Secret de tu app de Kick (en "Avanzado").'); return; }
+  if(!canRedirect()){ note('kkNote','Abre esta página desde https:// o desde http://localhost.'); return; }
+  note('kkNote','Redirigiendo a Kick…','info');
+  const verifier = b64url(crypto.getRandomValues(new Uint8Array(48)));
+  const challenge = b64url(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(verifier)));
+  const st = rand(); sessionStorage.setItem('tp.kk.state', st); sessionStorage.setItem('tp.kk.verifier', verifier);
+  location.href = 'https://id.kick.com/oauth/authorize?' + new URLSearchParams({
+    response_type:'code', client_id:cfg.kkClient, redirect_uri:redirectUri(),
+    scope:'user:read channel:read channel:write', code_challenge:challenge, code_challenge_method:'S256', state: st });
+}
+async function kickResolveBroadcaster(){
+  if(cfg.kkBroadcaster) return cfg.kkBroadcaster;
+  const slug = (cfg.kkChannel || cfg.kkLogin || '').trim().toLowerCase();
+  if(!slug) throw new Error('Escribe tu canal de Kick en ⚙ Ajustes → Kick.');
+  const j = await kkGetJson('https://api.kick.com/public/v1/channels?slug='+encodeURIComponent(slug));
+  const id = j && j.data && j.data[0] && j.data[0].broadcaster_user_id;
+  if(!id) throw new Error('Kick: no encontré el canal "'+slug+'". Revisa el nombre en ⚙ Ajustes.');
+  cfg.kkBroadcaster = String(id); save(); return cfg.kkBroadcaster;
+}
+async function kickFetchMe(){
+  try{
+    const j = await kkGetJson('https://api.kick.com/public/v1/users');
+    const u = j && j.data && j.data[0];
+    if(u){ cfg.kkLogin = u.name || cfg.kkLogin; if(u.profile_picture) setAvatar('kk', u.profile_picture); }
+  }catch{}
+}
+// una categoría solo cuenta si trae id y nombre (Kick manda id 0 y nombre vacío cuando no la conoce)
+const kkCat = c => c && Number(c.id) >= 1 && c.name ? { id:String(c.id), name:String(c.name), img:c.thumbnail || c.banner || '' } : null;
+// datos públicos del canal: por el relay y, si no, por proxies públicos
+async function kickPublicChannel(slug){
+  if(!slug) return null;
+  if(server){
+    try{
+      const r = await fetch(srvBase()+'/kick/channel/'+encodeURIComponent(slug.toLowerCase()));
+      if(r.ok){ const j = await r.json(); if(j.avatar && !cfg.kkAvatar) setAvatar('kk', j.avatar); return { category: kkCat(j.category), tags: j.tags || [], live: !!j.live }; }
+    }catch{}
+    // relay antiguo: al menos la foto de perfil sale de la lista de emotes del canal
+    if(!cfg.kkAvatar) fetch(srvBase()+'/kick/emotes/'+encodeURIComponent(slug.toLowerCase())).then(r => r.ok ? r.json() : null).then(j => {
+      const ch = Array.isArray(j) && j.find(x => x && x.user && x.slug === slug.toLowerCase());
+      if(ch && ch.user.profile_pic) setAvatar('kk', ch.user.profile_pic);
+    }).catch(() => {});
+  }
+  const url = 'https://kick.com/api/v2/channels/'+encodeURIComponent(slug);
+  for(const wrap of [u => 'https://corsproxy.io/?url='+encodeURIComponent(u), u => 'https://api.allorigins.win/raw?url='+encodeURIComponent(u)]){
+    const ctl = new AbortController(), to = setTimeout(() => ctl.abort(), 7000);
+    try{
+      const r = await fetch(wrap(url), { signal: ctl.signal });
+      if(!r.ok) continue;
+      const c = await r.json();
+      const live = c.livestream || null;
+      const cat = (live && (live.categories || [])[0]) || (c.recent_categories || [])[0];
+      if(c.user && c.user.profile_pic && !cfg.kkAvatar) setAvatar('kk', c.user.profile_pic);
+      return { category: kkCat(cat && { id:cat.id, name:cat.name, thumbnail: cat.banner && (cat.banner.src || cat.banner.url) }), tags: (live && live.tags) || [], live: !!live };
+    }catch{}
+    finally{ clearTimeout(to); }
+  }
+  return null;
+}
+async function kkLoadCurrent(){
+  if(!connected.kick()){ setPillStatus('kick','idle','sin conectar'); return; }
+  setPillStatus('kick','connecting','cargando…');
+  try{
+    setAvatar('kk');
+    if(!cfg.kkLogin) await kickFetchMe(); else kickFetchMe();
+    const id = await kickResolveBroadcaster();
+    const j = await kkGetJson('https://api.kick.com/public/v1/channels?broadcaster_user_id='+id);
+    const c = j && j.data && j.data[0];
+    if(!c) throw new Error('Kick: no encontré datos del canal.');
+    const s = state.kick;
+    s.title = c.stream_title || '';
+    s.live = !!(c.stream && c.stream.is_live);
+    let cat = kkCat(c.category), source = '';
+    let tags = Array.isArray(c.custom_tags) ? c.custom_tags : null;
+    // 1) si estás en directo, el directo trae la categoría y las etiquetas
+    if(!cat || !tags){
+      try{
+        const ls = await kkGetJson('https://api.kick.com/public/v1/livestreams?broadcaster_user_id='+id);
+        const l = ls && ls.data && ls.data[0];
+        if(l){
+          s.live = true;
+          if(!cat) cat = kkCat(l.category);
+          if(!tags && Array.isArray(l.custom_tags)) tags = l.custom_tags;
+          if(!s.title && l.stream_title) s.title = l.stream_title;
+        }
+      }catch(e){ if(e.auth) throw e; }
+    }
+    // 2) la página pública del canal (categoría actual o la más reciente)
+    if(!cat){
+      const pub = await kickPublicChannel(c.slug || cfg.kkChannel || cfg.kkLogin);
+      // sin directo, lo último que aplicaste desde aquí es más fiable que la categoría del último directo
+      if(pub && pub.category && (pub.live || !cfg.kkLastCat)){ cat = pub.category; source = pub.live ? '' : 'recent'; }
+      if(pub && !tags && pub.tags && pub.tags.length) tags = pub.tags;
+    }
+    // 3) lo último que aplicaste desde este panel
+    if(!cat && cfg.kkLastCat){ cat = { ...cfg.kkLastCat }; source = 'last'; }
+    if(!tags) tags = Array.isArray(cfg.kkLastTags) ? cfg.kkLastTags : [];
+    if(cat && !cat.img){
+      try{
+        const g = await kkGetJson('https://api.kick.com/public/v1/categories/'+encodeURIComponent(cat.id));
+        const d = Array.isArray(g && g.data) ? g.data[0] : (g && g.data);
+        if(d) cat.img = d.thumbnail || d.banner || '';
+      }catch{}
+    }
+    if(!cat) note2('kkNote2', server && !(server.kick && server.kick.channel)
+      ? 'Kick no informa tu categoría fuera de directo. Sube el worker.js nuevo a tu relay para leerla igualmente.'
+      : 'Kick no informó tu categoría: elige una arriba y pulsa Aplicar; el panel la recordará.', 'info');
+    else note2('kkNote2', '');
+    Object.assign(s, { catId: cat ? cat.id : '', catName: cat ? cat.name : '', catImg: cat ? cat.img : '', catSource: source, tags: tags.slice(0, 10) });
+    snapshot('kick'); catSelUpdate('kick');
+    $('#kkLive').classList.toggle('on', s.live);
+    setPillStatus('kick','ok','conectado');
+    $('#kkSynced').textContent = 'Sincronizado ' + new Date().toLocaleTimeString('es', { hour:'2-digit', minute:'2-digit' });
+  }catch(e){
+    if(e && e.auth){ kkClearSession(e.message); return; }
+    setPillStatus('kick','error', (e && e.message) || 'error al cargar');
+    note2('kkNote2', (e && e.message) || 'Kick: no se pudieron cargar los datos.', 'err');
+  }
+}
+const kkMap = j => (Array.isArray(j && j.data) ? j.data : []).filter(c => c && c.id != null && c.name)
+  .map(c => ({ id:String(c.id), name:String(c.name), img:c.thumbnail || c.banner || '' }));
+async function kkSearchCategories(q){
+  if(!connected.kick()) throw new Error('Conecta tu cuenta de Kick en ⚙ Ajustes primero.');
+  q = q.replace(/,/g,' ').trim();
+  let v2Error = null, v2Worked = false;
+  // v2 exige al menos 3 letras; con menos se usa v1
+  if(q.length >= 3){
+    try{
+      const res = kkMap(await kkGetJson('https://api.kick.com/public/v2/categories?limit=50&name=' + encodeURIComponent(q)));
+      v2Worked = true;
+      if(res.length) return res;
+    }catch(e){ if(e.auth){ kkClearSession(e.message); throw e; } v2Error = e; }
+  }
+  try{ return kkMap(await kkGetJson('https://api.kick.com/public/v1/categories?q=' + encodeURIComponent(q))); }
+  catch(e){
+    if(e.auth){ kkClearSession(e.message); throw e; }
+    if(v2Worked) return [];
+    throw v2Error || e;
+  }
+}
+async function kkApply(){
+  if(!connected.kick()){ note2('kkNote2','Conecta tu cuenta de Kick en ⚙ Ajustes primero.','err'); return false; }
+  const s = state.kick, btn = $('#kkApply');
+  const body = { custom_tags: s.tags };
+  if(s.title.trim()) body.stream_title = s.title.trim().slice(0, LIMIT.kick);
+  const catNum = Number(s.catId);
+  const catValid = !!s.catId && Number.isInteger(catNum) && catNum >= 1;
+  if(catValid) body.category_id = catNum;
+  if(!body.stream_title && !catValid && !s.tags.length){ note2('kkNote2','No hay nada que aplicar todavía.','err'); return false; }
+  btn.disabled = true; note2('kkNote2','Aplicando cambios…','info');
+  try{
+    const r = await kkFetch('https://api.kick.com/public/v1/channels', {
+      method:'PATCH', headers:{ 'Content-Type':'application/json' }, body: JSON.stringify(body) });
+    if(r.status === 401){ kkClearSession('La sesión de Kick caducó. Vuelve a conectar la cuenta en ⚙ Ajustes.'); throw new Error('la sesión caducó.'); }
+    if(!r.ok){
+      const j = await r.json().catch(() => ({}));
+      const extra = j && j.data && typeof j.data === 'object' ? ' — ' + JSON.stringify(j.data) : '';
+      throw new Error((j.message || ('error '+r.status)) + extra);
+    }
+    // Kick no siempre devuelve la categoría cuando no estás en directo: se recuerda la aplicada
+    if(catValid) cfg.kkLastCat = { id:String(catNum), name:s.catName, img:s.catImg || '' };
+    cfg.kkLastTags = [...s.tags]; save();
+    s.catSource = ''; catSelUpdate('kick');
+    snapshot('kick'); refreshDirty('kick');
+    note2('kkNote2','Cambios aplicados en Kick ✓','ok');
+    logTitle('kick');
+    $('#kkSynced').textContent = 'Aplicado ' + new Date().toLocaleTimeString('es', { hour:'2-digit', minute:'2-digit' });
+    return true;
+  }catch(e){ note2('kkNote2', 'Kick: '+e.message, 'err'); return false; }
+  finally{ btn.disabled = false; }
+}
+wireCatSearch('kick', kkSearchCategories);
+
+/* =========================================================
+   YOUTUBE
+   ========================================================= */
+const YT_API = 'https://www.googleapis.com/youtube/v3/';
+const yts = { videoId:'', kind:'', snippet:null, cats:[] };
+function ytStoreTokens(j){
+  cfg.ytToken = j.access_token;
+  if(j.refresh_token) cfg.ytRefresh = j.refresh_token;
+  cfg.ytExpires = Date.now() + (Number(j.expires_in) || 3599) * 1000;
+  save();
+}
+let ytRefreshing = null;
+function ytRefreshToken(){
+  if(ytRefreshing) return ytRefreshing;
+  if(cfg.ytVia !== 'server' || !cfg.ytRefresh) return Promise.resolve(false);
+  ytRefreshing = (async () => {
+    try{
+      const j = await srvRefresh('youtube', cfg.ytRefresh);
+      if(j && j.access_token){ ytStoreTokens(j); return true; }
+      if(j && j.invalid){ cfg.ytRefresh = ''; save(); }
+      return false;
+    }catch{ return false; }
+    finally{ ytRefreshing = null; }
+  })();
+  return ytRefreshing;
+}
+function ytExpire(){
+  cfg.ytToken = ''; cfg.ytExpires = 0; save();
+  setPillStatus('youtube','idle','sin conectar');
+  note2('ytNote2','La sesión de YouTube caducó. Vuelve a conectar la cuenta en ⚙ Ajustes.','err');
+}
+async function ytJson(path, params, opts){
+  opts = opts || {};
+  if(cfg.ytExpires && Date.now() > cfg.ytExpires - 120000) await ytRefreshToken();
+  const url = YT_API + path + '?' + new URLSearchParams(params || {});
+  const go = () => fetch(url, { ...opts, headers:{ ...(opts.headers || {}), Authorization:'Bearer '+cfg.ytToken } });
+  let r = await go();
+  if(r.status === 401){
+    if(await ytRefreshToken()) r = await go();
+    else { ytExpire(); throw new Error('la sesión caducó, vuelve a conectar la cuenta.'); }
+  }
+  const j = await r.json().catch(() => null);
+  if(!r.ok){
+    const e = (j && j.error) || {}, reason = (e.errors && e.errors[0] && e.errors[0].reason) || '';
+    const why = { quotaExceeded:'se acabó la cuota diaria de la API de YouTube.', forbidden:'la cuenta conectada no es dueña de este directo.',
+      insufficientPermissions:'falta un permiso; vuelve a conectar la cuenta.', invalidTitle:'YouTube rechazó el título (máx. 100 caracteres, sin < ni >).',
+      invalidTags:'YouTube rechazó las etiquetas (máx. 500 caracteres en total).', invalidCategoryId:'esa categoría no está disponible en tu país.' }[reason];
+    throw new Error(why || e.message || ('error '+r.status));
+  }
+  return j;
+}
+function ytStartLogin(){
+  readForm();
+  if(srvHas('youtube')) return srvLogin('youtube', 'ytNote');
+  if(!cfg.ytClient){ note('ytNote','Falta el Client ID de Google (en "Avanzado").'); return; }
+  if(!canRedirect()){ note('ytNote','Abre esta página desde https:// o desde http://localhost.'); return; }
+  note('ytNote','Redirigiendo a Google…','info');
+  const st = rand(); sessionStorage.setItem('tp.yt.state', st);
+  location.href = 'https://accounts.google.com/o/oauth2/v2/auth?' + new URLSearchParams({
+    client_id: cfg.ytClient, redirect_uri: redirectUri(), response_type:'token', prompt:'select_account',
+    scope:'https://www.googleapis.com/auth/youtube.force-ssl', state: st, include_granted_scopes:'true' });
+}
+async function ytLoadCategories(){
+  if(yts.cats.length) return yts.cats;
+  try{
+    const cached = JSON.parse(localStorage.getItem('tyrapanel.ytcats') || 'null');
+    if(cached && Date.now() - cached.t < 7 * 86400000 && cached.list.length){ yts.cats = cached.list; return yts.cats; }
+  }catch{}
+  const region = (navigator.language || 'es-US').split('-')[1] || 'US';
+  const j = await ytJson('videoCategories', { part:'snippet', regionCode: region.toUpperCase(), hl:'es' });
+  yts.cats = ((j && j.items) || []).filter(c => c.snippet && c.snippet.assignable).map(c => ({ id:c.id, name:c.snippet.title }));
+  try{ localStorage.setItem('tyrapanel.ytcats', JSON.stringify({ t: Date.now(), list: yts.cats })); }catch{}
+  return yts.cats;
+}
+function ytPaintCats(){
+  const sel = $('#ytCat'), cur = state.youtube.catId;
+  sel.innerHTML = '';
+  if(!yts.cats.length){ sel.append(new Option(connected.youtube() ? 'Cargando categorías…' : 'Conecta YouTube para ver las categorías', '')); return; }
+  yts.cats.forEach(c => sel.append(new Option(c.name, c.id)));
+  if(cur && !yts.cats.some(c => c.id === cur)) sel.append(new Option(state.youtube.catName || ('Categoría '+cur), cur));
+  sel.value = cur || '';
+}
+$('#ytCat').addEventListener('change', () => {
+  const v = $('#ytCat').value, c = yts.cats.find(x => x.id === v);
+  state.youtube.catId = v; state.youtube.catName = c ? c.name : '';
+  syncPreview(); refreshDirty('youtube');
+  if(c) showIdeas('yt', c.name); else hideIdeas();
+});
+// el directo con el que trabaja el panel: el que está en vivo o, si no, el próximo programado
+async function ytFindBroadcast(){
+  const live = await ytJson('liveBroadcasts', { part:'snippet', broadcastStatus:'active', broadcastType:'all', maxResults:'1' });
+  if(live && live.items && live.items[0]) return { id: live.items[0].id, kind:'live' };
+  const up = await ytJson('liveBroadcasts', { part:'snippet', broadcastStatus:'upcoming', broadcastType:'all', maxResults:'10' });
+  const list = ((up && up.items) || []).sort((a, b) => Date.parse(a.snippet.scheduledStartTime || 0) - Date.parse(b.snippet.scheduledStartTime || 0));
+  return list[0] ? { id: list[0].id, kind:'upcoming', when: list[0].snippet.scheduledStartTime } : null;
+}
+async function ytLoadCurrent(){
+  if(!connected.youtube()){ setPillStatus('youtube','idle','sin conectar'); return; }
+  setPillStatus('youtube','connecting','cargando…');
+  const s = state.youtube;
+  try{
+    if(!cfg.ytChannelId || !cfg.ytAvatar){
+      const me = await ytJson('channels', { part:'snippet', mine:'true' });
+      const ch = me && me.items && me.items[0];
+      if(ch){ cfg.ytChannelId = ch.id; cfg.ytLogin = ch.snippet.title || ''; const th = ch.snippet.thumbnails || {}; cfg.ytAvatar = ((th.medium || th.default || {}).url) || ''; save(); }
+    }
+    setAvatar('yt', cfg.ytAvatar);
+    $('#ytWho').textContent = cfg.ytLogin || 'Conectado';
+    ytLoadCategories().then(ytPaintCats).catch(() => {});
+    const b = await ytFindBroadcast();
+    if(!b){
+      yts.videoId = ''; yts.snippet = null; s.live = false;
+      $('#ytInfo').innerHTML = 'No tienes ningún directo <b>en vivo</b> ni <b>programado</b>. Prográmalo en YouTube Studio y pulsa ⚙ → Guardar para recargar.';
+      $('#ytLive').classList.remove('on');
+      setPillStatus('youtube','ok','sin directo programado');
+      return;
+    }
+    const v = await ytJson('videos', { part:'snippet', id: b.id });
+    const sn = v && v.items && v.items[0] && v.items[0].snippet;
+    if(!sn) throw new Error('no pude leer los datos del directo.');
+    yts.videoId = b.id; yts.kind = b.kind; yts.snippet = sn;
+    s.title = sn.title || ''; s.catId = sn.categoryId || ''; s.tags = Array.isArray(sn.tags) ? sn.tags.slice(0, 10) : [];
+    s.live = b.kind === 'live';
+    const known = yts.cats.find(c => c.id === s.catId); s.catName = known ? known.name : '';
+    if(!s.catName && s.catId){ try{ await ytLoadCategories(); const k = yts.cats.find(c => c.id === s.catId); if(k) s.catName = k.name; }catch{} }
+    snapshot('youtube'); ytPaintCats();
+    const badge = $('#ytLive');
+    badge.classList.add('on'); badge.classList.toggle('sched', !s.live);
+    badge.innerHTML = s.live ? '<i></i>EN VIVO' : '<i></i>PROGRAMADO';
+    $('#ytInfo').innerHTML = (s.live ? 'Directo en vivo' : 'Próximo directo') + (b.when && !s.live ? ' · ' + esc(new Date(b.when).toLocaleString('es', { dateStyle:'medium', timeStyle:'short' })) : '') +
+      ' · <a href="https://studio.youtube.com/video/'+esc(b.id)+'/livestreaming" target="_blank" rel="noopener" style="color:var(--pink-soft)">abrir en YouTube Studio</a>';
+    setPillStatus('youtube','ok','conectado');
+    $('#ytSynced').textContent = 'Sincronizado ' + new Date().toLocaleTimeString('es', { hour:'2-digit', minute:'2-digit' });
+  }catch(e){
+    if(!cfg.ytToken) return;
+    setPillStatus('youtube','error', (e && e.message) || 'error al cargar');
+    note2('ytNote2', 'YouTube: '+((e && e.message) || 'no se pudieron cargar los datos.'), 'err');
+  }
+}
+async function ytApply(){
+  if(!connected.youtube()){ note2('ytNote2','Conecta tu cuenta de YouTube en ⚙ Ajustes primero.','err'); return false; }
+  if(!yts.videoId || !yts.snippet){ note2('ytNote2','No hay un directo en vivo ni programado al que aplicar los cambios.','err'); return false; }
+  const s = state.youtube, btn = $('#ytApply');
+  const title = s.title.trim();
+  if(!title){ note2('ytNote2','YouTube necesita un título.','err'); return false; }
+  if(title.length > LIMIT.youtube){ note2('ytNote2','YouTube admite títulos de hasta 100 caracteres (el tuyo tiene '+title.length+').','err'); return false; }
+  const tags = s.tags.map(t => String(t).replace(/[<>]/g, '')).filter(Boolean);
+  // videos.update reemplaza el snippet entero: se reenvía lo que ya tenía (descripción, idioma) para no borrarlo
+  const sn = yts.snippet;
+  const snippet = { title, categoryId: s.catId || sn.categoryId, description: sn.description || '', tags };
+  if(sn.defaultLanguage) snippet.defaultLanguage = sn.defaultLanguage;
+  btn.disabled = true; note2('ytNote2','Aplicando cambios…','info');
+  try{
+    const j = await ytJson('videos', { part:'snippet' }, { method:'PUT', headers:{ 'Content-Type':'application/json' }, body: JSON.stringify({ id: yts.videoId, snippet }) });
+    if(j && j.snippet) yts.snippet = j.snippet;
+    snapshot('youtube'); refreshDirty('youtube');
+    note2('ytNote2','Cambios aplicados en YouTube ✓','ok');
+    logTitle('youtube');
+    $('#ytSynced').textContent = 'Aplicado ' + new Date().toLocaleTimeString('es', { hour:'2-digit', minute:'2-digit' });
+    return true;
+  }catch(e){ note2('ytNote2', 'YouTube: '+e.message, 'err'); return false; }
+  finally{ btn.disabled = false; }
+}
+
+/* =========================================================
+   IDEAS DE TÍTULO
+   Mezcla tus títulos anteriores (de este panel y de cada plataforma)
+   con la categoría elegida. Todo se calcula aquí, sin servicios externos.
+   ========================================================= */
+const hist = { list: [], loading: null };
+const normTxt = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
+let kkRecentCats = [];
+// cada título que el panel ve (al cargar o al aplicar) se guarda: así las ideas aprenden tu estilo aunque la plataforma no guarde tus directos
+function rememberTitle(t, cat, src){
+  t = String(t || '').trim(); if(!t) return;
+  const log = Array.isArray(cfg.titleLog) ? cfg.titleLog : [];
+  const old = log.find(x => normTxt(x.t) === normTxt(t));
+  const e = { t, cat: cat || (old && old.cat) || '', at: Date.now(), src: (old && old.src === 'manual') ? 'manual' : src };
+  cfg.titleLog = [e, ...log.filter(x => x !== old)].slice(0, 80); save();
+  hist.list = [{ t, cat: e.cat, src }, ...hist.list.filter(x => normTxt(x.t) !== normTxt(t))];
+}
+function logTitle(p){ rememberTitle(state[p].title, state[p].catName, 'panel'); }
+function loadHistory(){
+  if(hist.loading) return hist.loading;
+  hist.loading = (async () => {
+    const out = [], jobs = [];
+    (Array.isArray(cfg.titleLog) ? cfg.titleLog : []).forEach(e => out.push({ t: e.t, cat: e.cat, src: e.src || 'panel' }));
+    ['twitch','kick','youtube'].forEach(p => { const sv = state[p].saved; if(connected[p]() && sv.title) out.push({ t: sv.title, cat: sv.catName || '', src: p }); });
+    if(connected.twitch()) jobs.push(
+      twFetch('https://api.twitch.tv/helix/videos?first=50&user_id='+cfg.twUserId).then(r => r.json())
+        .then(j => ((j && j.data) || []).forEach(v => out.push({ t: v.title, cat: '', src: 'twitch' }))).catch(() => {}));
+    const slug = (cfg.kkChannel || cfg.kkLogin || '').trim().toLowerCase();
+    if(connected.kick() && slug && server) jobs.push(
+      fetch(srvBase()+'/kick/channel/'+encodeURIComponent(slug)+'?history=1').then(r => r.ok ? r.json() : null)
+        .then(j => {
+          ((j && j.history) || []).forEach(h => out.push({ t: h.title, cat: h.category || '', src: 'kick' }));
+          kkRecentCats = ((j && j.recent) || []).filter(Boolean);
+        }).catch(() => {}));
+    if(connected.youtube()) jobs.push((async () => {
+      const j = await ytJson('liveBroadcasts', { part:'snippet', broadcastStatus:'completed', broadcastType:'all', maxResults:'25' });
+      const items = (j && j.items) || [], catOf = {};
+      if(items.length){
+        try{
+          const v = await ytJson('videos', { part:'snippet', id: items.map(i => i.id).join(',') });
+          ((v && v.items) || []).forEach(x => { catOf[x.id] = x.snippet.categoryId; });
+          await ytLoadCategories();
+        }catch{}
+      }
+      items.forEach(i => { const c = yts.cats.find(c => c.id === catOf[i.id]); out.push({ t: i.snippet.title, cat: c ? c.name : '', src: 'youtube' }); });
+    })().catch(() => {}));
+    await Promise.all(jobs);
+    // el mismo título puede venir de varias fuentes: se queda una vez, con la categoría si alguna la sabe
+    const seen = new Map();
+    hist.list = out.filter(e => {
+      const t = String(e.t || '').trim(), k = normTxt(t);
+      if(!t) return false;
+      const prev = seen.get(k);
+      if(prev){ if(!prev.cat && e.cat) prev.cat = e.cat; return false; }
+      e.t = t; seen.set(k, e); return true;
+    });
+    return hist.list;
+  })();
+  return hist.loading;
+}
+const CHAT_CAT = /just chatting|charla|chatting|personas y blogs|people|irl|talk|podcast/i;
+const IDEAS_GAME = ['Hoy toca {cat}', '{cat} con la comunidad', '{cat} hasta que el cuerpo aguante', 'Primera vez en {cat}, ¿qué puede salir mal?',
+  'Noche de {cat}', '{cat} y buena vibra', 'Probando suerte en {cat}', '{cat} tranqui, pasa a saludar', 'Volvemos a {cat}',
+  '{cat} a ciegas', 'Un poquito de {cat}', '¿Hoy sí terminamos {cat}?', 'Aprendiendo a jugar {cat}', '{cat} con el chat de copiloto'];
+const IDEAS_CHAT = ['Charlando con el chat', 'Hablemos de todo un poco', 'Café y charla con la comunidad', 'Preguntas y respuestas con el chat',
+  'Rato de charla, pasa a saludar', 'Contando historias con el chat', 'Noche de charla tranqui', 'Platicando de la semana', 'Hoy no hay juego, hay chisme'];
+const SEP_RE = /(\s*(?:[|•·~]|\/\/|\s[-—–]\s)\s*)/;
+const BOX = '[\\[【(「{][^\\]】)」}]{1,24}[\\]】)」}]';
+const LEAD_RE = new RegExp('^(?:[\\p{Extended_Pictographic}\\uFE0F\\u200d]+\\s*|' + BOX + '\\s*)+', 'u');
+const TAIL_RE = new RegExp('(?:\\s*(?:[#!@][\\p{L}\\p{N}_]+|[\\p{Extended_Pictographic}\\uFE0F\\u200d]+|' + BOX + '))+\\s*$', 'u');
+// las partes de un título: lo que va antes (emoji, [ES], "Serie |"), el texto principal, y lo que va después (#tags, !comandos, emojis, "| !discord")
+function anatomy(t, catNames){
+  let rest = t.trim(), lead = '';
+  const lm = rest.match(LEAD_RE);
+  if(lm){ lead = lm[0].trim(); rest = rest.slice(lm[0].length); }
+  const bits = rest.split(SEP_RE), segs = bits.filter((_, i) => i % 2 === 0);
+  let bi = 0;
+  if(segs.length > 1){
+    const withCat = segs.findIndex(x => catNames.some(c => c && c.length > 2 && normTxt(x).includes(c)));
+    bi = withCat >= 0 ? withCat : segs.reduce((m, x, i) => x.trim().length > segs[m].trim().length ? i : m, 0);
+  }
+  let body = (segs[bi] || '').trim(), end = '';
+  const tm = body.match(TAIL_RE);
+  if(tm && tm.index > 0){ end = tm[0].trim(); body = body.slice(0, tm.index).trim(); }
+  const letters = body.replace(/[^\p{L}]/gu, '');
+  return {
+    lead, body, end,
+    before: bits.slice(0, bi * 2).join(''),
+    after: bits.slice(bi * 2 + 1).join(''),
+    punct: (body.match(/!{1,3}$/) || [''])[0],
+    upper: letters.length >= 6 && letters === letters.toUpperCase()
+  };
+}
+function compose(an, body){
+  let b = body.trim();
+  if(an.punct && !/[!?.…~]$/.test(b)) b += an.punct;
+  if(an.upper) b = b.toUpperCase();
+  return [an.lead, an.before + b + (an.end ? ' ' + an.end : '') + an.after].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
+}
+// la forma del título sin fijarse en qué emoji concreto usaste esa vez
+const skeleton = an => normTxt([an.lead, an.before, an.end, an.after, an.punct, an.upper].join('¦')).replace(/[\p{Extended_Pictographic}\uFE0F\u200d]+/gu, '◆');
+// tus estilos más usados (los títulos recientes pesan más)
+function topStyles(list, catNames){
+  const groups = new Map();
+  list.slice(0, 20).forEach((e, i) => {
+    const an = anatomy(e.t, catNames), k = skeleton(an);
+    const g = groups.get(k) || { an, score: 0 };
+    g.score += (e.src === 'manual' ? 2 : 1) + (20 - i) / 20; groups.set(k, g);
+  });
+  return [...groups.values()].sort((a, b) => b.score - a.score).map(g => g.an);
+}
+// formas de nombrar una categoría dentro de un título: "Hollow Knight: Silksong", "Silksong", "Hollow Knight"
+function catAliases(c){
+  const out = [c];
+  c.split(/\s*[:\-–]\s+/).forEach(x => { if(x.trim().length >= 4 && x !== c) out.push(x.trim()); });
+  return out.sort((a, b) => b.length - a.length);
+}
+const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+let ideaSeed = 0;
+function buildIdeas(cat, list){
+  const limit = connected.youtube() ? LIMIT.youtube : LIMIT.twitch;
+  const nc = normTxt(cat), out = [], seen = new Set([normTxt(sharedTitleEl.value)]);
+  const add = (t, kind) => {
+    t = String(t).replace(/\s+/g, ' ').trim();
+    const k = normTxt(t);
+    if(!t || t.length > limit || seen.has(k)) return false;
+    seen.add(k); out.push({ t, kind }); return true;
+  };
+  const known = [...new Set(list.map(e => e.cat).concat(state.twitch.saved.catName, state.kick.saved.catName, kkRecentCats).filter(c => c && c.length >= 3))];
+  const catNames = known.map(normTxt).concat(nc);
+  // 1) títulos que ya usaste con esta misma categoría
+  list.filter(e => e.cat && normTxt(e.cat) === nc).slice(0, 2).forEach(e => add(e.t, 'past'));
+  // 2) tus títulos con el juego cambiado: "Silksong a ciegas!! 🦋" → "Minecraft a ciegas!! 🦋"
+  let adapted = 0;
+  for(const e of (CHAT_CAT.test(cat) ? [] : list)){
+    if(adapted >= 2) break;
+    const cats = e.cat ? [e.cat] : known;
+    for(const c of cats){
+      if(normTxt(c) === nc) continue;
+      const hit = catAliases(c).find(a => new RegExp('(^|[^\\p{L}])' + reEsc(a) + '(?![\\p{L}])', 'iu').test(e.t));
+      if(hit){ if(add(e.t.replace(new RegExp(reEsc(hit), 'i'), cat), 'mix')) adapted++; break; }
+    }
+  }
+  // 3) ideas nuevas puestas con la forma de tus títulos (tus emojis, etiquetas, comandos y mayúsculas)
+  const styles = topStyles(list, catNames);
+  const pool = CHAT_CAT.test(cat) ? IDEAS_CHAT : IDEAS_GAME;
+  if(CHAT_CAT.test(cat)){
+    // para charlar, tus propias frases de otros directos de charla también sirven
+    list.filter(e => e.cat && CHAT_CAT.test(e.cat) && normTxt(e.cat) !== nc).slice(0, 1).forEach(e => add(e.t, 'past'));
+  }
+  for(let i = 0; out.length < 6 && i < pool.length * 2; i++){
+    const base = pool[(i + ideaSeed * 4) % pool.length].replace('{cat}', cat);
+    const an = styles.length ? styles[i % Math.min(2, styles.length)] : null;
+    const styled = an && skeleton(an) !== skeleton(anatomy('x', []));
+    const t = an ? compose(an, base) : base;
+    if(!add(t, styled ? 'mix' : 'idea') && an) add(base, 'idea');
+  }
+  return out;
+}
+const SUGG_IDS = { tw:'#twSugg', kk:'#kkSugg', yt:'#ytSugg', shared:'#sharedSugg' };
+let ideaCtx = null;
+function hideIdeas(){ Object.values(SUGG_IDS).forEach(id => { $(id).hidden = true; }); ideaCtx = null; }
+async function showIdeas(where, cat){
+  if(!cat) return;
+  hideIdeas(); ideaCtx = { where, cat };
+  const box = $(SUGG_IDS[where]), head = `<div class="sugg-h">💡 <span>Ideas de título para <b>${esc(cat)}</b></span>`;
+  box.hidden = false;
+  box.innerHTML = head + '</div><div class="sugg-empty">Revisando tus directos anteriores…</div>';
+  const list = await loadHistory();
+  if(!ideaCtx || ideaCtx.where !== where || ideaCtx.cat !== cat) return;
+  const ideas = buildIdeas(cat, list);
+  const n = list.length;
+  const basis = n ? `<div class="sugg-empty">Basado en ${n} título${n === 1 ? '' : 's'} tuyo${n === 1 ? '' : 's'}${n < 4 ? ' · pega más en ⚙ Ajustes → General para que se parezcan más a ti' : ''}.</div>` : '';
+  const tag = { past:['de tus directos','past'], mix:['con tu estilo',''], idea:['idea',''] };
+  box.innerHTML = head + '<span class="sp"><button type="button" data-a="more" title="Otras ideas">↻ Otras</button><button type="button" data-a="close" title="Cerrar">✕</button></span></div>' +
+    (ideas.length
+      ? '<div class="sugg-list">' + ideas.map((x, i) => `<button type="button" data-i="${i}"><span>${esc(x.t)}</span><small class="${tag[x.kind][1]}">${tag[x.kind][0]}</small></button>`).join('') + '</div>'
+      : '<div class="sugg-empty">No se me ocurrió nada nuevo para esta categoría.</div>') +
+    (n ? basis : '<div class="sugg-empty">Todavía no conozco tus títulos: pega algunos en ⚙ Ajustes → General o aplica títulos desde aquí.</div>');
+  box.onclick = e => {
+    const b = e.target.closest('button'); if(!b) return;
+    if(b.dataset.a === 'close') return hideIdeas();
+    if(b.dataset.a === 'more'){ ideaSeed++; return showIdeas(where, cat); }
+    const x = ideas[Number(b.dataset.i)]; if(!x) return;
+    setSharedTitle(x.t);
+    sharedTitleEl.classList.remove('flash'); void sharedTitleEl.offsetWidth; sharedTitleEl.classList.add('flash');
+    toast('✓ TÍTULO PUESTO · PULSA APLICAR');
+  };
+}
+$('#ideaBtn').onclick = () => {
+  const cat = state.twitch.catName || state.kick.catName || state.youtube.catName;
+  if(!cat){ toast('✕ ELIGE UNA CATEGORÍA PRIMERO','err'); return; }
+  if(ideaCtx && ideaCtx.where === 'shared') return hideIdeas();
+  showIdeas('shared', cat);
+};
+
+/* ---------- Aplicar ---------- */
+const APPLY = { twitch: twApply, kick: kkApply, youtube: ytApply };
+async function applyOne(p){
+  const ok = await APPLY[p]();
+  if(ok){ toast('✓ '+PNAME[p].toUpperCase()+' ACTUALIZADO'); confirmChime(); }
+  else if(connected[p]()) toast('✕ ERROR EN '+PNAME[p].toUpperCase(), 'err');
+}
+async function applyAll(btn, noteId){
+  const list = ['twitch','kick','youtube'].filter(p => connected[p]());
+  if(!list.length){
+    toast('✕ CONECTA UNA CUENTA PRIMERO','err');
+    if(noteId) note2(noteId,'Conecta al menos una cuenta en ⚙ Ajustes.','err');
+    return;
+  }
+  btn.disabled = true;
+  if(noteId) note2(noteId,'Aplicando…','info');
+  const res = await Promise.all(list.map(p => APPLY[p]()));
+  const ok = list.filter((p, i) => res[i]), bad = list.filter((p, i) => !res[i]);
+  if(ok.length) confirmChime();
+  if(!bad.length){ toast('✓ TODO ACTUALIZADO'); if(noteId) note2(noteId,'Aplicado en '+ok.map(p => PNAME[p]).join(', ')+' ✓','ok'); }
+  else { toast('✕ REVISA '+bad.map(p => PNAME[p].toUpperCase()).join(', '),'err'); if(noteId) note2(noteId,'Hubo un problema en '+bad.map(p => PNAME[p]).join(', ')+'; mira el aviso de cada tarjeta.','err'); }
+  btn.disabled = false;
+}
+$('#applyAllBtn').onclick = () => applyAll($('#applyAllBtn'));
+$('#sharedApply').onclick = () => applyAll($('#sharedApply'), 'sharedNote');
+$('#twApply').onclick = () => applyOne('twitch');
+$('#kkApply').onclick = () => applyOne('kick');
+$('#ytApply').onclick = () => applyOne('youtube');
+function resetPlat(p){
+  const s = state[p];
+  s.catId = s.saved.catId; s.catName = s.saved.catName;
+  setSharedTitle(s.saved.title); sharedTagUI.setAll(s.saved.tags);
+  if(p === 'youtube') ytPaintCats(); else catSelUpdate(p);
+  syncPreview(); refreshAllDirty();
+}
+$('#twReset').onclick = () => resetPlat('twitch');
+$('#kkReset').onclick = () => resetPlat('kick');
+$('#ytReset').onclick = () => resetPlat('youtube');
+
+/* ---------- Vuelta del inicio de sesión ---------- */
+async function handleOAuthReturn(){
+  const hash = new URLSearchParams(location.hash.slice(1)), qs = new URLSearchParams(location.search);
+  const tc = hash.get('tc');
+  if(tc && PNAME[tc]){                                   // vuelta desde el relay
+    history.replaceState(null, '', location.pathname);
+    const ok = !!hash.get('nonce') && hash.get('nonce') === sessionStorage.getItem('tp.srv.nonce');
+    sessionStorage.removeItem('tp.srv.nonce');
+    const nid = { twitch:'twNote', kick:'kkNote', youtube:'ytNote' }[tc];
+    if(!ok){ toast('✕ INICIO DE SESIÓN NO VÁLIDO','err'); return; }
+    if(hash.get('error')){ toast('✕ '+PNAME[tc].toUpperCase()+': NO SE CONECTÓ','err'); note(nid, PNAME[tc]+': '+(hash.get('error') === 'access_denied' ? 'se canceló el permiso.' : hash.get('error')), 'err'); return; }
+    const j = { access_token: hash.get('access_token'), refresh_token: hash.get('refresh_token') || '', expires_in: Number(hash.get('expires_in')) || 0 };
+    try{
+      if(tc === 'twitch'){
+        const v = await twValidate(j.access_token); twStoreAuth(j.access_token, v);
+        cfg.twRefresh = j.refresh_token; cfg.twVia = 'server'; cfg.twExpires = Date.now() + (Number(v.expires_in) || 14000) * 1000; save();
+      } else if(tc === 'kick'){
+        cfg.kkRefresh = ''; kkStoreTokens(j); cfg.kkVia = 'server'; cfg.kkBroadcaster = ''; save(); await kickFetchMe(); save();
+      } else {
+        cfg.ytRefresh = ''; ytStoreTokens(j); cfg.ytVia = 'server'; cfg.ytChannelId = ''; cfg.ytAvatar = ''; save();
+      }
+      toast('✓ '+PNAME[tc].toUpperCase()+' CONECTADO');
+    }catch(e){ toast('✕ '+PNAME[tc].toUpperCase()+': '+((e && e.message) || 'error'),'err'); }
+    return;
+  }
+  const state0 = hash.get('state') || qs.get('state') || '';
+  if(hash.get('access_token')){
+    const token = hash.get('access_token'); history.replaceState(null, '', location.pathname);
+    if(state0 && state0 === sessionStorage.getItem('tp.yt.state')){
+      cfg.ytRefresh = ''; cfg.ytVia = ''; cfg.ytChannelId = ''; cfg.ytAvatar = ''; ytStoreTokens({ access_token: token, expires_in: hash.get('expires_in') });
+      toast('✓ YOUTUBE CONECTADO'); return;
+    }
+    if(state0 !== sessionStorage.getItem('tp.tw.state')){ toast('✕ INICIO DE SESIÓN NO VÁLIDO','err'); return; }
+    try{ const v = await twValidate(token); twStoreAuth(token, v); cfg.twVia = ''; cfg.twRefresh = ''; save(); toast('✓ TWITCH CONECTADO'); }
+    catch(e){ toast('✕ TWITCH: '+e.message,'err'); }
+  } else if(qs.get('code') && sessionStorage.getItem('tp.kk.verifier')){
+    const code = qs.get('code'), ok = state0 === sessionStorage.getItem('tp.kk.state');
+    const verifier = sessionStorage.getItem('tp.kk.verifier'); history.replaceState(null, '', location.pathname);
+    sessionStorage.removeItem('tp.kk.verifier');
+    if(!ok){ toast('✕ INICIO DE SESIÓN NO VÁLIDO','err'); return; }
+    try{
+      const r = await fetch('https://id.kick.com/oauth/token', { method:'POST', headers:{ 'Content-Type':'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ grant_type:'authorization_code', client_id:cfg.kkClient, client_secret:cfg.kkSecret, redirect_uri:redirectUri(), code_verifier:verifier, code }) });
+      const j = await r.json(); if(!j.access_token) throw new Error('sin token en la respuesta');
+      kkStoreTokens(j); cfg.kkVia = ''; await kickFetchMe(); save(); toast('✓ KICK CONECTADO');
+    }catch(e){ toast('✕ KICK: '+(e instanceof TypeError ? 'el navegador bloqueó la conexión' : e.message),'err'); }
+  } else if(hash.get('error') || qs.get('error')){
+    history.replaceState(null, '', location.pathname);
+    toast('✕ NO SE COMPLETÓ EL INICIO DE SESIÓN','err');
+  }
+}
+
+/* ---------- Ajustes ---------- */
+const dlg = $('#dlg');
+function showTab(t){
+  $('#dlgTabs').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.tab === t));
+  dlg.querySelectorAll('fieldset[data-tab]').forEach(f => f.classList.toggle('tab-on', f.dataset.tab === t));
+}
+$('#dlgTabs').addEventListener('click', e => { const b = e.target.closest('button[data-tab]'); if(b) showTab(b.dataset.tab); });
+showTab('general');
+function fillForm(){
+  $('#relayUrl').value = cfg.relay;
+  $('#twChannel').value = cfg.twChannel; $('#twClient').value = cfg.twClient; $('#twToken').value = '';
+  $('#kkChannel').value = cfg.kkChannel; $('#kkClient').value = cfg.kkClient; $('#kkSecret').value = cfg.kkSecret; $('#kkToken').value = '';
+  $('#ytClient').value = cfg.ytClient;
+  $('#volRange').value = cfg.volume; $('#volVal').textContent = cfg.volume+'%'; $('#sndOn').checked = !!cfg.soundOn;
+  $('#twAcct').textContent = cfg.twToken && cfg.twLogin ? '✓ Conectado como '+cfg.twLogin : '';
+  $('#kkAcct').textContent = cfg.kkToken ? '✓ Conectado'+(cfg.kkLogin ? ' como '+cfg.kkLogin : '') : '';
+  $('#ytAcct').textContent = cfg.ytToken ? '✓ Conectado'+(cfg.ytLogin ? ' como '+cfg.ytLogin : '')+(cfg.ytVia === 'server' ? '' : ' (la sesión dura 1 hora)') : '';
+  themeDraft = cfg.theme; paintThemePick(cfg.theme);
+  const log = Array.isArray(cfg.titleLog) ? cfg.titleLog : [];
+  $('#pastTitles').value = log.filter(x => x.src === 'manual').map(x => x.t).join('\n');
+  const auto = log.filter(x => x.src !== 'manual').length;
+  $('#pastInfo').textContent = 'Además de lo que pegues, el panel recuerda solo los títulos que ve en tus plataformas y los que aplicas' + (auto ? ' (' + auto + ' guardados).' : '.') + ' Twitch aporta los de tus videos guardados.';
+  paintServer();
+}
+function readForm(){
+  const prevKk = cfg.kkChannel;
+  cfg.relay = $('#relayUrl').value.trim() || DEF.relay;
+  cfg.twChannel = $('#twChannel').value.trim().replace(/^#/,'').toLowerCase();
+  cfg.twClient = $('#twClient').value.trim();
+  cfg.kkChannel = $('#kkChannel').value.trim().toLowerCase();
+  if(cfg.kkChannel !== prevKk){ cfg.kkBroadcaster = ''; cfg.kkLastCat = null; cfg.kkLastTags = []; }
+  cfg.kkClient = $('#kkClient').value.trim(); cfg.kkSecret = $('#kkSecret').value.trim();
+  cfg.ytClient = $('#ytClient').value.trim();
+  cfg.volume = Number($('#volRange').value); cfg.soundOn = $('#sndOn').checked;
+  cfg.theme = themeDraft;
+  const pasted = $('#pastTitles').value.split(/\n+/).map(x => x.trim().slice(0, 160)).filter(Boolean).slice(0, 60);
+  const others = (Array.isArray(cfg.titleLog) ? cfg.titleLog : []).filter(x => x.src !== 'manual' && !pasted.some(p => normTxt(p) === normTxt(x.t)));
+  cfg.titleLog = [...pasted.map(t => ({ t, cat: '', at: 0, src: 'manual' })), ...others].slice(0, 120);
+  hist.loading = null;
+  save();
+}
+function openSettings(tab){
+  fillForm(); ['twNote','kkNote','ytNote'].forEach(n => note(n, ''));
+  $('#redirUrl').textContent = canRedirect() ? redirectUri() : 'Abre la página desde https:// o http://localhost';
+  showTab(tab || 'general');
+  if(!dlg.open) dlg.showModal();
+}
+$('#setBtn').onclick = () => openSettings();
+$('#copyRedir').onclick = () => { if(canRedirect() && navigator.clipboard) navigator.clipboard.writeText(redirectUri()).catch(() => {}); };
+$('#dlgClose').onclick = $('#dlgCancel').onclick = () => dlg.close();
+dlg.addEventListener('close', () => applyTheme(cfg.theme));
+$('#dlgSave').onclick = async () => {
+  const prevRelay = srvBase();
+  readForm(); dlg.close(); applyTheme(cfg.theme);
+  if(srvBase() !== prevRelay) await loadServer();
+  refreshAll();
+};
+$('#volRange').addEventListener('input', () => { $('#volVal').textContent = $('#volRange').value+'%'; });
+$('#pastClear').onclick = () => {
+  cfg.titleLog = []; save(); hist.loading = null; hist.list = [];
+  $('#pastTitles').value = ''; $('#pastInfo').textContent = 'Listo: el panel olvidó tus títulos guardados.';
+};
+$('#sndTest').onclick = () => confirmChime(Number($('#volRange').value));
+
+$('#twConnect').onclick = twStartLogin;
+$('#kkConnect').onclick = kickStartLogin;
+$('#ytConnect').onclick = ytStartLogin;
+$('#twLogout').onclick = () => {
+  Object.assign(cfg, { twAvatar:'', twToken:'', twLogin:'', twUserId:'', twScopes:'', twTokenClient:'', twRefresh:'', twExpires:0, twVia:'' }); save();
+  state.twitch = blank(); $('#twAvatar').removeAttribute('src'); $('#twPrevAvatar').removeAttribute('src');
+  fillForm(); note('twNote','Cuenta de Twitch desconectada.','info'); refreshAll();
+};
+$('#kkLogout').onclick = () => {
+  Object.assign(cfg, { kkAvatar:'', kkToken:'', kkRefresh:'', kkExpires:0, kkLogin:'', kkBroadcaster:'', kkVia:'' }); save();
+  state.kick = blank(); $('#kkAvatar').removeAttribute('src'); $('#kkPrevAvatar').removeAttribute('src');
+  fillForm(); note('kkNote','Cuenta de Kick desconectada.','info'); refreshAll();
+};
+$('#ytLogout').onclick = () => {
+  const tok = cfg.ytRefresh || cfg.ytToken;
+  if(tok) fetch('https://oauth2.googleapis.com/revoke?token='+encodeURIComponent(tok), { method:'POST', mode:'no-cors' }).catch(() => {});
+  Object.assign(cfg, { ytToken:'', ytRefresh:'', ytExpires:0, ytVia:'', ytLogin:'', ytChannelId:'', ytAvatar:'' }); save();
+  state.youtube = blank(); yts.videoId = ''; yts.snippet = null; $('#ytAvatar').removeAttribute('src'); $('#ytPrevAvatar').removeAttribute('src');
+  fillForm(); note('ytNote','Cuenta de YouTube desconectada.','info'); refreshAll();
+};
+$('#twTokenSave').onclick = async () => {
+  readForm();
+  const tok = $('#twToken').value.trim().replace(/^oauth:/i,''); if(!tok){ note('twNote','Pega un token.'); return; }
+  try{
+    const v = await twValidate(tok);
+    if(!(v.scopes || []).includes('channel:manage:broadcast')){ note('twNote','Ese token no tiene el permiso channel:manage:broadcast.','err'); return; }
+    twStoreAuth(tok, v); cfg.twVia = ''; cfg.twRefresh = ''; save();
+    note('twNote','Token válido, conectado como '+v.login,'ok'); fillForm(); refreshAll();
+  }catch(e){ note('twNote','Twitch: '+e.message,'err'); }
+};
+$('#kkTokenSave').onclick = async () => {
+  readForm();
+  const tok = $('#kkToken').value.trim().replace(/^Bearer\s+/i,''); if(!tok){ note('kkNote','Pega un token.'); return; }
+  Object.assign(cfg, { kkToken:tok, kkRefresh:'', kkExpires:0, kkVia:'' }); save();
+  await kickFetchMe(); save();
+  note('kkNote','Token guardado'+(cfg.kkLogin ? ', conectado como '+cfg.kkLogin : ''),'ok'); fillForm(); refreshAll();
+};
+
+/* ---------- Arranque ---------- */
+async function refreshAll(){
+  $('#twWho').textContent = connected.twitch() ? '@'+cfg.twLogin : 'Sin cuenta conectada';
+  $('#kkWho').textContent = connected.kick() ? (cfg.kkLogin ? '@'+cfg.kkLogin : 'Conectado') : 'Sin cuenta conectada';
+  $('#ytWho').textContent = connected.youtube() ? (cfg.ytLogin || 'Conectado') : 'Sin cuenta conectada';
+  const ini = { tw: connected.twitch() && (cfg.twLogin || cfg.twChannel), kk: connected.kick() && (cfg.kkLogin || cfg.kkChannel), yt: connected.youtube() && cfg.ytLogin };
+  Object.keys(ini).forEach(k => { $('#'+k+'AvWrap').dataset.i = ini[k] ? String(ini[k]).trim().charAt(0).toUpperCase() : ''; setAvatar(k, ini[k] ? undefined : null); });
+  if(!connected.youtube()){ $('#ytInfo').textContent = 'Conecta tu cuenta en ⚙ Ajustes → YouTube.'; $('#ytLive').classList.remove('on'); }
+  await Promise.all([twLoadCurrent(), kkLoadCurrent(), ytLoadCurrent()]);
+  catSelUpdate('twitch'); catSelUpdate('kick'); ytPaintCats();
+  const first = ['twitch','kick','youtube'].find(p => connected[p]() && (state[p].title || state[p].tags.length));
+  setSharedTitle(first ? state[first].title : (state.twitch.title || state.kick.title || state.youtube.title || ''));
+  sharedTagUI.setAll(first ? state[first].tags : []);
+  // al cargar, el título y las etiquetas de cada plataforma vuelven a ser los suyos para saber qué cambió
+  ['twitch','kick','youtube'].forEach(p => { state[p].title = sharedTitleEl.value; state[p].tags = [...sharedTags]; });
+  syncPreview(); refreshAllDirty();
+  ['twitch','kick','youtube'].forEach(p => { const sv = state[p].saved; if(connected[p]() && sv.title) rememberTitle(sv.title, sv.catName, p); });
+  hist.loading = null;
+  if(!connected.twitch() && !connected.kick() && !connected.youtube()){
+    note2('sharedNote','Abre ⚙ Ajustes y conecta tus cuentas para empezar.','info');
+  }
+}
+(async () => {
+  await loadServer();
+  await handleOAuthReturn();
+  await refreshAll();
+})();
+})();
+</script>
+</body>
+</html>
